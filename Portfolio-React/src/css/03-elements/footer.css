@@ -1,0 +1,36 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    & .logo {
+        width: 1.625rem;
+        aspect-ratio: 1;
+    }
+
+    & .footer-author-name {
+        color: var(--color-font);
+        font-weight: 500;
+    }
+
+    & .footer-author-email {
+        color: var(--color-font-gray);
+        font-weight: 500;
+    }
+}
+
+.footer-author-copyright {
+    color: var(--color-font-gray);
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding-top: 0.5rem;
+}

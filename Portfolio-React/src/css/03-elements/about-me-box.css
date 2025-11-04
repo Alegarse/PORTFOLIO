@@ -1,0 +1,36 @@
+.about-me-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.about-me-title  {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-font);
+    padding-top: 1rem;
+}
+
+.about-me-content {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+    padding-inline: 0.5rem;
+    gap: 6.25rem;
+}
+
+.about-me-descp {
+    padding: 0.75rem;
+    color: var(--color-font-gray);
+    font-weight: 400;
+    line-height: 165%;
+}
+
+.about-me-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
