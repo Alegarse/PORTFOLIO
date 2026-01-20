@@ -1,0 +1,56 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 5rem;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  border-top: 1px solid grey;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+
+  & .logo {
+    width: 1.625rem;
+    aspect-ratio: 1;
+  }
+
+  & a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: var(--color-font-gray);
+
+    &:hover {
+      color: var(--color-purple);
+    }
+  }
+
+  & .footer-author-name {
+    color: var(--color-font);
+    font-weight: 500;
+  }
+
+  & .footer-author-email {
+    color: var(--color-font-gray);
+    font-weight: 500;
+  }
+}
+
+.footer-author-copyright {
+  color: var(--color-font-gray);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.hr-separator {
+  color: var(--color-font-gray);
+  border-top: 1px solid grey;
+  width: 90%;
+}

@@ -1,0 +1,143 @@
+/* Layout principal de la aplicación */
+.app-container {
+  display: flex;
+  background: #1b2436;
+}
+
+/* Navbar lateral */
+.navbar-lateral {
+  width: 280px;
+  min-width: 280px;
+  background: #1b2436;
+  border-right: 1px solid var(--navbar-border);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  transition: transform var(--transition-normal);
+}
+
+.navbar-header {
+  padding: var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  border-bottom: 1px solid var(--navbar-border);
+}
+
+.navbar-header svg {
+  color: white;
+}
+
+.navbar-header h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+}
+
+.navbar-nav {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--spacing-md);
+}
+
+.navbar-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.nav-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  color: #64748b;
+  font-weight: 500;
+  text-align: left;
+}
+
+.nav-item:hover {
+  background: var(--navbar-hover);
+  color: var(--color-primario);
+}
+
+.nav-item.activo {
+  background: var(--navbar-actual);
+  color: #1b2436;
+}
+
+.icono-lenguaje {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.nav-item.activo .icono-lenguaje {
+  color: #1b2436;
+}
+
+.nombre-lenguaje {
+  font-size: 0.95rem;
+}
+
+.navbar-footer {
+  padding: var(--spacing-lg);
+  text-align: center;
+}
+
+.navbar-footer p {
+  font-weight: 600;
+  color: var(--color-primario);
+  margin-bottom: var(--spacing-xs);
+}
+
+.navbar-footer small {
+  color: #94a3b8;
+  font-size: 0.8rem;
+}
+
+/* Contenido principal */
+.main-content {
+  flex: 1;
+  margin-left: 280px;
+  padding: var(--spacing-xl);
+  min-height: 100vh;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .navbar-lateral {
+    width: 240px;
+    min-width: 240px;
+  }
+  
+  .main-content {
+    margin-left: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-lateral {
+    transform: translateX(-100%);
+    box-shadow: var(--shadow-xl);
+  }
+  
+  .navbar-lateral.abierto {
+    transform: translateX(0);
+  }
+  
+  .main-content {
+    margin-left: 0;
+    padding: var(--spacing-md);
+  }
+}

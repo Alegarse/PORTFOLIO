@@ -1,0 +1,18 @@
+/* General config*/
+@import './fonts.css';
+@import './vars.css';
+@import './general.css';
+
+/* Components */
+@import './header.css';
+@import './footer.css';
+@import './notFoundPage.css';
+
+/* ChatBot */
+@import './chatBot.css';
+
+/* Portfolio */
+@import './portfolio.css';
+
+/* Challenges*/
+@import '../styles/challenges/indexChallenges.css';

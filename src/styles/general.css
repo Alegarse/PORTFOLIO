@@ -1,0 +1,24 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--cw-font);
+  background-color: var(--color-background);
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+}
+
+.purple-text {
+  color: var(--color-purple);
+}
+
+.hiddenCh {
+  visibility: hidden;
+}
