@@ -1,0 +1,75 @@
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  & .logo {
+    width: 2.625rem;
+    aspect-ratio: 1;
+  }
+
+  & .logo-none {
+    height: 2.625rem;
+  }
+
+  & .header-author-name {
+    color: var(--color-font);
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+}
+
+.header-menu-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  height: 1.5rem;
+
+  & .link-button {
+    display: inline-flex;
+    gap: 0.0625rem;
+    color: var(--color-font-gray);
+    font-weight: 400;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s ease;
+
+    &:hover {
+      border-bottom-color: var(--color-purple);
+    }
+  }
+  & .separator-navbar {
+    color: var(--color-font-gray);
+    height: 100%;
+  }
+}
+
+.lang-select {
+  padding: 0.5rem;
+  background-color: transparent;
+  color: var(--color-font-gray);
+  border: none;
+
+  & option {
+    border: none;
+    padding: 0.5rem;
+    background-color: #111827;
+    color: var(--color-font-gray);
+  }
+}
