@@ -28,6 +28,7 @@ const iconsLanguages = {
 };
 
 const NavbarLateral = ({
+  className = "",
   devLanguages,
   devLanguageSelected,
   onHandleSelectDevLang,
@@ -35,7 +36,7 @@ const NavbarLateral = ({
   const { language } = useSelector((state) => state.menuComponentReducer);
 
   return (
-    <aside className="navbar-lateral">
+    <aside className={`navbar-lateral ${className}`}>
       <div className="navbar-header">
         <Code size={28} />
         <h2>{textNBCh.navTitle[language]}</h2>

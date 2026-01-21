@@ -32,7 +32,7 @@
   & .header-author-name {
     color: var(--color-font);
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: clamp(1.3rem,1.4rem, 1.5rem);
   }
 }
 
@@ -67,6 +67,7 @@
   background-color: transparent;
   color: var(--color-font-gray);
   border: none;
+  border-radius:  var(--radius-sm);
 
   & option {
     border: none;
@@ -85,9 +86,23 @@ select:focus-visible {
   outline-offset: 2px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 880px) {
+  .header-author-name {
+    display: none;
+  }
+}
+
+@media (max-width: 880px) {
+
+  .header-author-name {
+    display: none;
+  }
   .header-menu {
     background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .header-menu-list a {
+    font-size: .9rem;
   }
 
   .link-button {
