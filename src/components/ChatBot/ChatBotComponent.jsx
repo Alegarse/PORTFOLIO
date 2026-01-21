@@ -25,7 +25,6 @@ const ChatBotComponent = () => {
 
   const getBotReply = (currentState, userMessage) => {
     const next = speech.start.next[userMessage];
-    console.log(next);
     let text = msgUser.toLowerCase();
 
     if (next && next === "contact") {
@@ -116,8 +115,6 @@ const ChatBotComponent = () => {
       text.includes("call")
     ) {
       const c = speech.contact;
-      console.log(c);
-
       setStartedChat(false);
       setMsgBot(
         <>
@@ -202,6 +199,11 @@ const ChatBotComponent = () => {
     setMsgBot(speech?.start.text);
   };
 
+  const openChatBot = () => {
+    setStartedChat(true)
+    setOpenedBot(!openedBot)
+  }
+
   const clearInput = () => {
     const input = document.querySelector("#cw-input");
     input.value = "";
@@ -268,7 +270,7 @@ const ChatBotComponent = () => {
           title={chatBot_data.icon_title[language]}
           className="cw-fab"
           style={{ display: "grid" }}
-          onClick={() => setOpenedBot(!openedBot)}
+          onClick={() => openChatBot()}
         />
       )}
     </div>
