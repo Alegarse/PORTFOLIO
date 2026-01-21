@@ -1,8 +1,8 @@
-import React from "react";
-import { mainData } from "../../../core/data/layoutData";
-import { useSelector } from "react-redux";
-import data from "../../../core/data/portfolioData";
-import ContactMapComponent from "./ContactMapComponent";
+import React from 'react';
+import { mainData } from '../../../core/data/layoutData';
+import { useSelector } from 'react-redux';
+import data from '../../../core/data/portfolioData';
+import ContactMapComponent from './ContactMapComponent';
 
 const ContactComponent = () => {
   const { language } = useSelector((state) => state.menuComponentReducer);
@@ -41,7 +41,7 @@ const ContactComponent = () => {
         >
           🔗 LinkedIn
         </a>
-        <a href="tel:+34600123456" className="contact-info-link">
+        <a href="tel:+34644321368" className="contact-info-link">
           📞 +34 644321 368
         </a>
       </div>
