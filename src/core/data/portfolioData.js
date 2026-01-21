@@ -54,6 +54,10 @@ const data = {
   nav_chgs: {
     es:"Retos de programación",
     en:"Developer's challenges"
+  },
+  contact_title: {
+    es: "Datos de contacto",
+    en: "Contact data"
   }
 };
 

@@ -30,7 +30,7 @@ const MenuComponent = () => {
       {data.nav_contact[language]}
       </Link>
       <span className="separator-navbar">|</span>
-      <Link className="link-button" to="/challenges">
+      <Link className="link-button" to="/challenges" onClick={() => onClickLinkHandler("challenges")}>
         {data.nav_chgs[language]}
       </Link>
       <div>
