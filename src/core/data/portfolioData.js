@@ -35,7 +35,7 @@ const data = {
   },
   skills_back_desc: {
     es: 'Desarrollo la lógica de servidor de aplicaciones web mediante APIs REST bien estructuradas, enfocadas en la seguridad, la claridad y la escalabilidad.\n Me siento cómodo trabajando con Node.js y Express para construir servicios robustos que conectan el frontend con la base de datos.\nImplemento sistemas de autenticación y autorización utilizando JWT y técnicas de cifrado como bcrypt, gestionando correctamente usuarios, permisos y flujos de sesión de forma segura.\nAdemás, organizo el backend siguiendo patrones como MVC, separando rutas, controladores y lógica de negocio, lo que permite un código más limpio, reutilizable y fácil de mantener.',
-    en: 'I am a programmer who works as a trainer specialized in software development. Before that, I worked as a team leader and Full Stack software analyst.\nI am passionate about everything related to development and project creation, as well as team management using Agile methodologies.\nIn my work, I combine methodologies focused on learning from scratch with advanced training and programming, so that my students acquire a distinctive edge.\nI am particularly interested in learning new programming languages and development methodologies.',
+    en: 'I develop the server-side logic for web applications through well-structured REST APIs, with a strong focus on security, clarity, and scalability.\nI am comfortable working with Node.js and Express to build robust services that connect the frontend with the database.\nI implement authentication and authorization systems using JWT and encryption techniques such as bcrypt, properly managing users, permissions, and secure session flows.\nIn addition, I organize the backend following patterns like MVC, separating routes, controllers, and business logic, which results in cleaner, more reusable, and easier-to-maintain code..',
   },
   skills_back_tags: "Node.js · Express · JWT · Bcrypt · PHP · REST APIs · MVC Architecture",
   skills_bbdd_title:{
@@ -44,7 +44,7 @@ const data = {
   },
   skills_bbdd_desc:{
     es: "Trabajo con bases de datos tanto relacionales como no relacionales, diseñando modelos de datos eficientes y adaptados a las necesidades de cada aplicación.\n Tengo experiencia utilizando MongoDB para estructuras flexibles y MySQL para datos más estructurados.\nIntegro servicios externos como Cloudinary para la gestión de imágenes y archivos, optimizando el almacenamiento y el rendimiento de las aplicaciones en producción.\nEn cuanto a herramientas, utilizo Git y GitHub como base de mi flujo de trabajo, junto con servidores Linux, lo que me permite mantener proyectos estables y bien controlados a lo largo de su ciclo de vida.",
-    en: "",
+    en: "I work with both relational and non-relational databases, designing efficient data models tailored to the specific needs of each application.\nI have experience using MongoDB for flexible data structures and MySQL for more structured data.\nI integrate external services such as Cloudinary for image and file management, optimizing storage and application performance in production environments.\nRegarding tools, I use Git and GitHub as the foundation of my workflow, along with Linux servers, allowing me to maintain stable and well-controlled projects throughout their lifecycle.",
   },
   skills_bbdd_tags:"MongoDB · MySQL · Cloudinary · Git · GitHub · CI/CD · Linux Server",
   nav_contact:{
