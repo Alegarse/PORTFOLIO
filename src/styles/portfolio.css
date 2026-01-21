@@ -1,32 +1,28 @@
 .portfolio-container {
   display: flex;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
 }
 
 /* Main Component */
 .info-box {
   display: grid;
-  align-items: stretch;
   align-items: center;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  height: 100%;
-  max-width: 80vw;
 }
 
 .info-photo {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  overflow: hidden;
 
   & .photo-author {
-    max-width: 500px;
-    object-fit: contain;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-radius: 50%;
+    display: block;
     background: rgba(255, 255, 255, 0.15);
   }
 }
@@ -34,37 +30,31 @@
 .info-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  max-width: 40vw;
+  gap: 0.75rem;
 }
 
 .info-title {
   color: var(--color-font);
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
-  margin: 0.8rem 0;
+  line-height: 1.1;
+  margin: 0;
 }
 
 .info-desc {
-  max-width: 35.625rem;
   color: var(--color-font-gray);
   font-weight: 400;
-  line-height: 156%;
+  line-height: 1.6;
   white-space: pre-line;
-  margin-top: 0.8rem;
 }
 
 .info-link-container {
-  display: flex;
-  justify-content: flex-start;
+  margin-top: 0.75rem;
 }
 
 .info-link {
   display: inline-flex;
-  margin-top: 1.5rem;
-  text-decoration: none;
+  align-items: center;
   color: var(--color-font);
   gap: 0.5rem;
 
@@ -82,4 +72,24 @@
 
 .info_cv_icon {
   width: 1.6rem;
+  height: 1.6rem;
+  object-fit: contain;
+}
+
+
+@media (max-width: 768px) {
+  .info-box {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .photo-author {
+    max-width: 320px;
+  }
+
+  .info-text {
+    align-items: center;
+    text-align: justify;
+    margin: 0 2.5rem;
+  }
 }

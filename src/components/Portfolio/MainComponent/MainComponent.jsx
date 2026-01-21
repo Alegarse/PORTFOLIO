@@ -2,6 +2,7 @@ import React from 'react';
 import data from '../../../core/data/portfolioData';
 import { useSelector } from 'react-redux';
 import photo from '../../../assets/author-photo2.png';
+import aux from '../../../assets/fondo.png';
 import icon_pdf from '../../../assets/pdf.svg';
 import cv_pdf from '../../../assets/docs/cv_ags.pdf';
 
@@ -11,15 +12,20 @@ const MainComponent = () => {
     <>
       <section className="info-box container">
         <div className="info-photo">
-          <img
+          {/*<img
             src={photo}
+            alt="Fotografía del autor"
+            className="photo-author"
+          />*/}
+          <img
+            src={aux}
             alt="Fotografía del autor"
             className="photo-author"
           />
         </div>
 
         <div className="info-text">
-          <h1 className="info-title">Alejandro García Serrano</h1>
+          {/*<h1 className="info-title">Alejandro García Serrano</h1>*/}
           <h3 className="info-title">{data.bit_me[language]}</h3>
           <span className="info-desc">{data.info_desc[language]}</span>
           <div className="info-link-container">

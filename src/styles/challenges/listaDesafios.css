@@ -213,6 +213,7 @@
 @media (max-width: 768px) {
   .header-lenguaje {
     flex-direction: column;
+    align-items: start;
     gap: var(--spacing-md);
   }
   

@@ -1,7 +1,7 @@
 .cw-container {
   position: fixed;
   right: 18px;
-  bottom: 18px;
+  bottom: 8px;
   z-index: 99999;
   font-family: var(--cw-font);
 }
@@ -18,7 +18,7 @@
 }
 
 .cw-fab:hover {
-  transform: translateY(-1px);
+  transform: translateY(-5px);
   filter: brightness(1.05);
 }
 .cw-fab:active {

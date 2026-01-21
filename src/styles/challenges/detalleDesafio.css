@@ -194,7 +194,11 @@
 }
 
 .codigo-block.solution {
-  background: #065f46;
+  background: #1e293b;
+  
+  & code {
+    color: green;
+  }
 }
 
 /* Conceptos tags */

@@ -4,9 +4,11 @@
   align-items: center;
   padding: 0.5rem 2.5rem;
   position: fixed;
+  height: 60px;
   top: 0;
   left: 0;
   z-index: 1000;
+  background-color: var(--color-background);
 }
 
 .header-logo {
@@ -71,5 +73,24 @@
     padding: 0.5rem;
     background-color: #111827;
     color: var(--color-font-gray);
+  }
+
+  &:focus-visible {
+    outline-offset: 2px;
+  }
+}
+
+select:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  .header-menu {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .link-button {
+    text-align: center;
   }
 }

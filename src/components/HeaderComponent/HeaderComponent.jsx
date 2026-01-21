@@ -21,16 +21,11 @@ const HeaderComponent = () => {
         onClick={goToHomePortfolio}
         title={mainData.go_home[language]}
       >
-        {activity === "portfolio" ?(
+        {activity === "portfolio" ? (
           <>
-          <img
-          src={logo}
-          alt="Logo diseñado del autor"
-          className="logo"
-        />
-        <p className="header-author-name">
-          Alejandro García Serrano
-        </p></>
+            <img src={logo} alt="Logo diseñado del autor" className="logo" />
+            {/*<p className="header-author-name">Alejandro García Serrano</p>*/}
+          </>
         ) : (
           <img className="logo-none"></img>
         )}
