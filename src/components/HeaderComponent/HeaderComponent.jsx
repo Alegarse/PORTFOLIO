@@ -6,7 +6,6 @@ import { mainData } from "../../core/data/layoutData";
 
 const HeaderComponent = () => {
   const navigate = useNavigate();
-  let classView = "";
 
   const { language } = useSelector((state) => state.menuComponentReducer);
   const { activity } = useSelector((state) => state.headerComponentReducer);
@@ -24,7 +23,7 @@ const HeaderComponent = () => {
         {activity === "portfolio" ? (
           <>
             <img src={logo} alt="Logo diseñado del autor" className="logo" />
-            {/*<p className="header-author-name">Alejandro García Serrano</p>*/}
+            <p className="header-author-name">Alejandro García Serrano</p>
           </>
         ) : (
           <img className="logo-none"></img>

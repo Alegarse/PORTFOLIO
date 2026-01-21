@@ -176,7 +176,8 @@
 
 @media (max-width: 768px) {
   .info-box,
-  .skills-box {
+  .skills-box,
+  .contact-box {
     grid-template-columns: 1fr;
     gap: 1.25rem;
   }
@@ -186,7 +187,8 @@
   }
 
   .info-text,
-  .skills-text {
+  .skills-text,
+  .contact-text {
     align-items: center;
     text-align: justify;
     margin: 0 2.5rem;

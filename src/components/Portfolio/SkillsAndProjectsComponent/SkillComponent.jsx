@@ -31,7 +31,7 @@ const SkillComponent = (props) => {
         <div className="skills-img">
           <img
             src={photoSrc}
-            alt="Fotografía del autor"
+            alt="Img de la seccion"
             className="img-section"
           />
         </div>
