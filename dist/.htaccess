@@ -1,14 +1,11 @@
 Options -MultiViews
 RewriteEngine On
 
-# 1) NO reescribas archivos/carpetas reales
+# Si existe archivo o carpeta, sirve eso
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
-# 2) Evita que Apache “adivine” extensiones raras (por si acaso)
-#    (Opcional, pero suele ayudar)
-RewriteRule \.(css|js|mjs|map|json|png|jpg|jpeg|gif|svg|webp|ico|woff|woff2|ttf|eot|pdf|txt|xml)$ - [L,NC]
-
-# 3) Fallback SPA: todo lo demás al index
+# Si no existe, manda a la SPA
 RewriteRule ^ index.html [L]
+
