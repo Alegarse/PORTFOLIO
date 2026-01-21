@@ -37,7 +37,6 @@ const SkillComponent = (props) => {
         </div>
 
         <div className="skills-text">
-          {/*<h1 className="skills-title">Alejandro García Serrano</h1>*/}
           <h3 className="skills-title">{content.title}</h3>
           <span className="skills-desc">{content.desc}</span>
           <span className="skills-tags">{content.tags}</span>

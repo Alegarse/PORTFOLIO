@@ -56,8 +56,16 @@ const data = {
     en:"Developer's challenges"
   },
   contact_title: {
-    es: "Datos de contacto",
-    en: "Contact data"
+    es: "¿Hablamos?",
+    en: "Shall we talk?"
+  },
+  contact_description: {
+    es: "Siempre abierto a nuevas oportunidades, retos interesantes y a colaborar con equipos donde sumar y aprender vaya de la mano.",
+    en: "Always open to new opportunities, interesting challenges, and collaborating with teams where contributing and learning go hand in hand."
+  },
+  contact_location: {
+    es: "Ubicación: Benalmádena, Málaga, Spain",
+    en: "Location: Benalmádena, Málaga, Spain"
   }
 };
 

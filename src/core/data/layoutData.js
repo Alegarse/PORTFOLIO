@@ -9,7 +9,11 @@ export const mainData = {
     },
     go_github: {
         es: "Ir a github del autor",
-        en: "Got yo author's github"
+        en: "Got to author's github"
+    },
+    go_linkedin: {
+        es: "Ir al perfil de LinkedIn del autor",
+        en: "Got to author's linkedin profile"
     },
     text_404: {
         es: "Ups! Parece que al que creaba las páginas de este sitio se le ha agotado la batería y ahora no encuentras lo que estabas buscando...",
