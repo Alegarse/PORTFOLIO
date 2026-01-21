@@ -24,7 +24,7 @@ const SkillComponent = (props) => {
  
     useEffect(() => {
         setContentSection()
-    }, )
+    }, [])
 
   return (
     <section className="skills-box container">

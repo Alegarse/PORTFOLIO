@@ -3,7 +3,7 @@ import data from '../../../core/data/portfolioData';
 import { useSelector } from 'react-redux';
 import photo from '../../../assets/author-photo2.png';
 import icon_pdf from '../../../assets/pdf.svg';
-import cv_pdf from '../../../assets/docs/cv_ags.pdf';
+import cvUrl from "../../../assets/docs/cv.html?url";
 
 const MainComponent = () => {
   const { language } = useSelector((state) => state.menuComponentReducer);
@@ -25,7 +25,7 @@ const MainComponent = () => {
           <div className="info-link-container">
             <a
               className="info-link button"
-              href={cv_pdf}
+              href={cvUrl}
               target="_blank"
               title="Visualizar el CV"
             >
