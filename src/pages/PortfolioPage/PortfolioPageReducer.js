@@ -1,7 +1,7 @@
 import { SET_PORTFOLIO_LOCATION } from './PortfolioPageActions';
 
 const initialState = {
-  portfolioLocation: 'main',
+  portfolioLocation: 'skills',
 };
 
 const portfolioPageReducer = (state = initialState, action) => {

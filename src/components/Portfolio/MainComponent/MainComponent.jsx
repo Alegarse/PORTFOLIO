@@ -19,7 +19,7 @@ const MainComponent = () => {
         </div>
 
         <div className="info-text">
-          <h1 className="info-title">Alejandro García Serrano</h1>
+          {/*<h1 className="info-title">Alejandro García Serrano</h1>*/}
           <h3 className="info-title">{data.bit_me[language]}</h3>
           <span className="info-desc">{data.info_desc[language]}</span>
           <div className="info-link-container">

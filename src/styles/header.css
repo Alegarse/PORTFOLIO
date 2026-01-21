@@ -59,6 +59,7 @@
   & .separator-navbar {
     color: var(--color-font-gray);
     height: 100%;
+    margin: 0 20px;
   }
 }
 
@@ -84,6 +85,12 @@
 select:focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
+}
+
+@media (max-width: 695px) {
+  .header-logo img {
+    display: none;
+  }
 }
 
 @media (max-width: 880px) {

@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { setLanguageAction } from './MenuComponentActions';
 import data from '../../core/data/portfolioData';
+import { setPortfolioLocation } from '../../pages/PortfolioPage/PortfolioPageActions';
 
 const MenuComponent = () => {
   const dispatch = useDispatch();
@@ -12,10 +13,21 @@ const MenuComponent = () => {
     dispatch(setLanguageAction(lang));
   };
 
+  const onClickLinkHandler = (linkTo) => {
+    let locPortfolio = linkTo;
+    dispatch(setPortfolioLocation(locPortfolio));
+  }
+
   return (
     <nav className="header-menu-list">
-      <Link className="link-button" to="/">
+      <Link className="link-button" to="/" onClick={() => onClickLinkHandler("main")}>
       {data.nav_me[language]}
+      </Link>
+      <Link className="link-button" to="/" onClick={() => onClickLinkHandler("skills")}>
+      {data.nav_skills[language]}
+      </Link>
+      <Link className="link-button" to="/" onClick={() => onClickLinkHandler("contact")}>
+      {data.nav_contact[language]}
       </Link>
       <span className="separator-navbar">|</span>
       <Link className="link-button" to="/challenges">

@@ -24,7 +24,7 @@ const HeaderComponent = () => {
         {activity === "portfolio" ? (
           <>
             <img src={logo} alt="Logo diseñado del autor" className="logo" />
-            <p className="header-author-name">Alejandro García Serrano</p>
+            {/*<p className="header-author-name">Alejandro García Serrano</p>*/}
           </>
         ) : (
           <img className="logo-none"></img>
