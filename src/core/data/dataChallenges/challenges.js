@@ -2458,18 +2458,18 @@ export const challengesData_EN = {
         description:
           'Create the basic structure of an HTML5 document with all the necessary semantic tags.',
         targets: [
-          'Declaración DOCTYPE',
-          'Elementos <html>, <head>, <body>',
-          'Metadatos (charset, viewport, title)',
-          'Etiquetas semánticas (<header>, <nav>, <main>, <section>, <footer>)'
+          'Declaration DOCTYPE',
+          'Elements <html>, <head>, <body>',
+          'Metadata (charset, viewport, title)',
+          'Semantic labels (<header>, <nav>, <main>, <section>, <footer>)'
         ],
         initialCode: `<!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Tu código aquí -->
+  <!-- Your code here -->
 </head>
 <body>
-  <!-- Tu código aquí -->
+  <!-- Your code here -->
 </body>
 </html>`,
         solution: `<!DOCTYPE html>
@@ -2477,31 +2477,31 @@ export const challengesData_EN = {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Primera Página</title>
+  <title>My fiers web</title>
 </head>
 <body>
   <header>
-    <h1>Bienvenido a mi Web</h1>
+    <h1>Welcome to my Web</h1>
   </header>
   <nav>
     <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#acerca">Acerca</a></li>
-      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#init">Home</a></li>
+      <li><a href="#about">About me</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
   <main>
-    <section id="inicio">
-      <h2>Inicio</h2>
-      <p>Esta es mi primera página web con HTML5 semántico.</p>
+    <section id="init">
+      <h2>Init</h2>
+      <p>thiw is my first web page with semantic HTML5.</p>
     </section>
   </main>
   <footer>
-    <p>&copy; 2024 Mi Portfolio</p>
+    <p>&copy; 2024 My Portfolio</p>
   </footer>
 </body>
 </html>`,
-        concepts: ['DOCTYPE', 'Semántica HTML5', 'Metadatos', 'Accesibilidad']
+        concepts: ['DOCTYPE', 'Semantic HTML5', 'Metadata', 'Accesibility']
       },
       {
         id: 'html-2',
@@ -2510,40 +2510,40 @@ export const challengesData_EN = {
         description:
           'Create a complete contact form with different input types and basic validation.',
         targets: [
-          'Inputs de texto, email, textarea',
-          'Campos obligatorios (required)',
-          'Labels asociados correctamente',
-          'Botón de envío'
+          'Inputs text, email, textarea',
+          'Oblogatory fields (required)',
+          'Asociate labels',
+          'Submit button'
         ],
         initialCode: `<form>
-  <!-- Crea tu formulario aquí -->
-  <!-- Incluye: nombre, email, asunto, mensaje -->
+  <!-- Make your formulary here -->
+  <!-- Include: name, email, subject, message -->
 </form>`,
-        solution: `<form action="/enviar" method="POST">
+        solution: `<form action="/send" method="POST">
   <div>
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
   </div>
   <div>
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>
   </div>
   <div>
-    <label for="asunto">Asunto:</label>
-    <select id="asunto" name="asunto">
-      <option value="">Selecciona un asunto</option>
-      <option value="consulta">Consulta General</option>
-      <option value="presupuesto">Presupuesto</option>
-      <option value="soporte">Soporte</option>
+    <label for="subject">Subject:</label>
+    <select id="subject" name="subject">
+      <option value="">Select a subject</option>
+      <option value="ask">General question</option>
+      <option value="money">Money form</option>
+      <option value="support">Support</option>
     </select>
   </div>
   <div>
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
   </div>
-  <button type="submit">Enviar Mensaje</button>
+  <button type="submit">Submit message</button>
 </form>`,
-        concepts: ['Formularios HTML', 'Tipos de input', 'Validación HTML5', 'Accesibilidad']
+        concepts: ['HTML forms', 'Input types', 'Validate HTML5', 'Accesibility']
       },
       {
         id: 'html-3',
@@ -2552,13 +2552,13 @@ export const challengesData_EN = {
         description:
           'Create a responsive image gallery using figure, figcaption, and links.',
         targets: [
-          'Etiquetas <figure> y <figcaption>',
-          'Imágenes responsive con srcset',
-          'Enlaces a imágenes completas',
-          'Grid layout con CSS (próximamente)'
+          'Labels <figure> y <figcaption>',
+          'Responsive images with srcset',
+          'Links to full iamges',
+          'Grid layout with CSS (soon)'
         ],
         initialCode: `<div class="galeria">
-  <!-- Crea tu galería de 4 imágenes -->
+  <!-- Create you 4 images gallery -->
 </div>`,
         solution: `<div class="galeria">
   <figure>
