@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainLayout />}>
-          <Route path="/" element={<PortfolioPage />} />
+          <Route index element={<PortfolioPage />} />
           <Route path="/challenges" element={<ChallengesPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>

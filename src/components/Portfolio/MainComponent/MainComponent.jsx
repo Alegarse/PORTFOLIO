@@ -3,10 +3,10 @@ import data from '../../../core/data/portfolioData';
 import { useSelector } from 'react-redux';
 import photo from '../../../assets/author-photo2.png';
 import icon_pdf from '../../../assets/pdf.svg';
-import cvUrl from "../../../assets/docs/cv.html?url";
 
 const MainComponent = () => {
   const { language } = useSelector((state) => state.menuComponentReducer);
+  const cvUrl = `${import.meta.env.BASE_URL}cv.html`;
   return (
     <>
       <section className="info-box container">
