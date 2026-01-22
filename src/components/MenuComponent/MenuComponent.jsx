@@ -11,6 +11,7 @@ const MenuComponent = () => {
 
   const setLanguage = (lang) => {
     dispatch(setLanguageAction(lang));
+    localStorage.setItem('language', lang);
   };
 
   const onClickLinkHandler = (linkTo) => {
