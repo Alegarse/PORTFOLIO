@@ -1,5 +1,6 @@
 .header-menu {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 2.5rem;
@@ -9,6 +10,8 @@
   left: 0;
   z-index: 1000;
   background-color: var(--color-background);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .header-logo {
@@ -32,7 +35,10 @@
   & .header-author-name {
     color: var(--color-font);
     font-weight: 700;
-    font-size: clamp(1.3rem,1.4rem, 1.5rem);
+    font-size: clamp(1.3rem, 1.4rem, 1.5rem);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
@@ -68,7 +74,7 @@
   background-color: transparent;
   color: var(--color-font-gray);
   border: none;
-  border-radius:  var(--radius-sm);
+  border-radius: var(--radius-sm);
 
   & option {
     border: none;
@@ -87,8 +93,41 @@ select:focus-visible {
   outline-offset: 2px;
 }
 
+@media (max-width: 485px) {
+  .header-menu {
+    padding: 0.5rem 1rem;
+    padding-left: calc(1rem + env(safe-area-inset-left));
+    padding-right: calc(1rem + env(safe-area-inset-right));
+    gap: 0.75rem;
+  }
+
+  .header-menu-list {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    height: auto;
+  }
+
+  .header-author-name {
+    display: none;
+  }
+
+  .header-logo .logo {
+    width: 2.25rem;
+  }
+
+  .lang-select {
+    padding: 0.25rem 0.4rem;
+    font-size: 0.95rem;
+  }
+
+  .link-button {
+    font-size: 0.95rem;
+  }
+}
+
 @media (max-width: 695px) {
-  .header-logo img {
+  .header-author-name {
     display: none;
   }
 }
@@ -100,13 +139,12 @@ select:focus-visible {
 }
 
 @media (max-width: 880px) {
-
   .header-author-name {
     display: none;
   }
 
   .header-menu-list a {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   .link-button {

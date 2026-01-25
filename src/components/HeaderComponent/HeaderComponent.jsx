@@ -1,8 +1,8 @@
-import MenuComponent from "../MenuComponent/MenuComponent";
-import logo from "../../assets/logo_ags.webp";
-import { useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { mainData } from "../../core/data/layoutData";
+import MenuComponent from '../MenuComponent/MenuComponent';
+import logo from '../../assets/logo_ags.webp';
+import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { mainData } from '../../core/data/layoutData';
 
 const HeaderComponent = () => {
   const navigate = useNavigate();
@@ -11,7 +11,7 @@ const HeaderComponent = () => {
   const { activity } = useSelector((state) => state.headerComponentReducer);
 
   const goToHomePortfolio = () => {
-    navigate("/");
+    navigate('/');
   };
   return (
     <header className="header-menu container">
@@ -20,7 +20,7 @@ const HeaderComponent = () => {
         onClick={goToHomePortfolio}
         title={mainData.go_home[language]}
       >
-        {activity === "portfolio" ? (
+        {activity === 'portfolio' ? (
           <>
             <img src={logo} alt="Logo diseñado del autor" className="logo" />
             <p className="header-author-name">Alejandro García Serrano</p>
