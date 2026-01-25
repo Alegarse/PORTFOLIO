@@ -126,6 +126,11 @@ select:focus-visible {
   }
 }
 
+@media (max-width: 429px) {
+  .cw-container {
+    display: none;
+  }
+}
 @media (max-width: 695px) {
   .header-author-name {
     display: none;
