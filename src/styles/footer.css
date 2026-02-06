@@ -4,11 +4,11 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  height: 60px;
+  height: 3.75rem;
   bottom: 0;
   left: 0;
   z-index: 1000;
-  border-top: 1px solid grey;
+  border-top: 0.0625rem solid grey;
   background-color: var(--color-background);
 }
 
@@ -52,6 +52,6 @@
 
 .hr-separator {
   color: var(--color-font-gray);
-  border-top: 1px solid grey;
+  border-top: 0.0625rem solid grey;
   width: 90%;
 }

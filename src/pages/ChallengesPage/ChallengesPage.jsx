@@ -1,25 +1,25 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
-import NavbarLateral from "../../components/Challenges/NavbarLateral";
-import ChallengeDetail from "../../components/Challenges/ChallengeDetail";
-import ChallengesList from "../../components/Challenges/ChallengesList";
+import NavbarLateral from '../../components/Challenges/NavbarLateral';
+import ChallengeDetail from '../../components/Challenges/ChallengeDetail';
+import ChallengesList from '../../components/Challenges/ChallengesList';
 import {
   challengesData_EN,
   challengesData_ES,
-} from "../../core/data/dataChallenges/challenges";
-import { useDispatch, useSelector } from "react-redux";
-import { setActivityAction } from "../../components/HeaderComponent/HeaderComponentActions";
+} from '../../core/data/dataChallenges/challenges';
+import { useDispatch, useSelector } from 'react-redux';
+import { setActivityAction } from '../../components/HeaderComponent/HeaderComponentActions';
 
 function ChallengesPage() {
   const dispatch = useDispatch();
-  const [devLanguageSelected, setDevLanguageSelected] = useState("html");
+  const [devLanguageSelected, setDevLanguageSelected] = useState('html');
   const [challengeSelected, setChallengeSelected] = useState(null);
 
   const [isNavOpen, setIsNavOpen] = useState(false);
   const { language } = useSelector((state) => state.menuComponentReducer);
 
   const challengesData =
-    language === "es" ? challengesData_ES : challengesData_EN;
+    language === 'es' ? challengesData_ES : challengesData_EN;
   const devLanguages = Object.keys(challengesData);
 
   const handleSelectDevLang = (language) => {
@@ -38,15 +38,15 @@ function ChallengesPage() {
   };
 
   useEffect(() => {
-    dispatch(setActivityAction("challenges"));
+    dispatch(setActivityAction('challenges'));
   }, []);
 
   useEffect(() => {
     const onKeyDown = (event) => {
-      if (event.key === "Escape") setIsNavOpen(false);
+      if (event.key === 'Escape') setIsNavOpen(false);
     };
-    window.addEventListener("keydown", onKeyDown);
-    return () => window.removeEventListener("keydown", onKeyDown);
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
   }, []);
 
   return (
@@ -54,10 +54,10 @@ function ChallengesPage() {
       <button
         className="burger-btn"
         onClick={() => setIsNavOpen((v) => !v)}
-        aria-label={isNavOpen ? "Cerrar menú" : "Abrir menú"}
+        aria-label={isNavOpen ? 'Cerrar menú' : 'Abrir menú'}
         aria-expanded={isNavOpen}
       >
-        {isNavOpen ? "✕" : "☰"}
+        {isNavOpen ? '✕' : '☰'}
       </button>
       {isNavOpen && (
         <div
@@ -67,7 +67,7 @@ function ChallengesPage() {
         />
       )}
       <NavbarLateral
-        className={isNavOpen ? "open" : ""}
+        className={isNavOpen ? 'open' : ''}
         devLanguages={devLanguages}
         devLanguageSelected={devLanguageSelected}
         onHandleSelectDevLang={handleSelectDevLang}
@@ -75,10 +75,15 @@ function ChallengesPage() {
 
       <main className="main-content">
         {challengeSelected ? (
-          <ChallengeDetail desafio={challengeSelected} onVolver={handleBack} />
+          <ChallengeDetail
+            desafio={challengeSelected}
+            general={challengesData.general}
+            onVolver={handleBack}
+          />
         ) : (
           <ChallengesList
             challenges={challengesData[devLanguageSelected]}
+            general={challengesData.general}
             devLanguageSelected={devLanguageSelected}
             onHandleSelectChallenge={handleSelectChallenge}
           />

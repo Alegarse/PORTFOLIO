@@ -1,18 +1,26 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 body {
   font-family: var(--cw-font);
   background-color: var(--color-background);
   margin: 0 auto;
+  min-height: 100vh;
 }
 
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 120rem;
 }
 
 .purple-text {
@@ -24,6 +32,9 @@ body {
 }
 
 .main-layout {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

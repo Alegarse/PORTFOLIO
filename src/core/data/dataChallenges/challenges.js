@@ -1,6 +1,22 @@
-import { colours } from './config'
+import { colours } from './config';
 
 export const challengesData_ES = {
+  general: {
+    title: '¡Sigue practicando!',
+    paragraph:
+      'La mejor manera de aprender programación es practicando. Completa los desafíos y desarrolla tus habilidades paso a paso.',
+    target: 'objetivos',
+    challenge: 'desafios',
+    objectives: 'Objetivos de Aprendizaje',
+    code: 'Código Inicial',
+    concepts: 'Conceptos Clave',
+    showSol: 'Mostrar solución',
+    hideSol: 'Ocultar solución',
+    solution: 'Solución Propuesta',
+    copy: 'Copiar',
+    copied: 'Copiado',
+    backToCh: 'Volver a la lista de desafíos',
+  },
   html: {
     title: 'HTML',
     description: 'Lenguaje de marcado para estructurar contenido web',
@@ -10,12 +26,13 @@ export const challengesData_ES = {
         id: 'html-1',
         title: 'Estructura Básica HTML5',
         level: 'Principiante',
-        description: 'Crear la estructura básica de un documento HTML5 con todas las etiquetas semánticas necesarias.',
+        description:
+          'Crear la estructura básica de un documento HTML5 con todas las etiquetas semánticas necesarias.',
         targets: [
           'Declaración DOCTYPE',
           'Elementos <html>, <head>, <body>',
           'Metadatos (charset, viewport, title)',
-          'Etiquetas semánticas (<header>, <nav>, <main>, <section>, <footer>)'
+          'Etiquetas semánticas (<header>, <nav>, <main>, <section>, <footer>)',
         ],
         initialCode: `<!DOCTYPE html>
 <html lang="es">
@@ -55,18 +72,19 @@ export const challengesData_ES = {
   </footer>
 </body>
 </html>`,
-        concepts: ['DOCTYPE', 'Semántica HTML5', 'Metadatos', 'Accesibilidad']
+        concepts: ['DOCTYPE', 'Semántica HTML5', 'Metadatos', 'Accesibilidad'],
       },
       {
         id: 'html-2',
         title: 'Formulario de Contacto',
         level: 'Intermedio',
-        description: 'Crear un formulario de contacto completo con diferentes tipos de inputs y validación básica.',
+        description:
+          'Crear un formulario de contacto completo con diferentes tipos de inputs y validación básica.',
         targets: [
           'Inputs de texto, email, textarea',
           'Campos obligatorios (required)',
           'Labels asociados correctamente',
-          'Botón de envío'
+          'Botón de envío',
         ],
         initialCode: `<form>
   <!-- Crea tu formulario aquí -->
@@ -96,18 +114,24 @@ export const challengesData_ES = {
   </div>
   <button type="submit">Enviar Mensaje</button>
 </form>`,
-        concepts: ['Formularios HTML', 'Tipos de input', 'Validación HTML5', 'Accesibilidad']
+        concepts: [
+          'Formularios HTML',
+          'Tipos de input',
+          'Validación HTML5',
+          'Accesibilidad',
+        ],
       },
       {
         id: 'html-3',
         title: 'Galería de Imágenes',
         level: 'Intermedio',
-        description: 'Crear una galería responsive de imágenes usando figure, figcaption y enlaces.',
+        description:
+          'Crear una galería responsive de imágenes usando figure, figcaption y enlaces.',
         targets: [
           'Etiquetas <figure> y <figcaption>',
           'Imágenes responsive con srcset',
           'Enlaces a imágenes completas',
-          'Grid layout con CSS (próximamente)'
+          'Grid layout con CSS (próximamente)',
         ],
         initialCode: `<div class="galeria">
   <!-- Crea tu galería de 4 imágenes -->
@@ -138,9 +162,14 @@ export const challengesData_ES = {
     <figcaption>Imagen 4</figcaption>
   </figure>
 </div>`,
-        concepts: ['Figure y figcaption', 'Optimización de imágenes', 'Galerías', 'Accesibilidad visual']
-      }
-    ]
+        concepts: [
+          'Figure y figcaption',
+          'Optimización de imágenes',
+          'Galerías',
+          'Accesibilidad visual',
+        ],
+      },
+    ],
   },
   css: {
     title: 'CSS',
@@ -151,12 +180,13 @@ export const challengesData_ES = {
         id: 'css-1',
         title: 'Flexbox Centrado',
         level: 'Principiante',
-        description: 'Centrar un elemento tanto horizontal como verticalmente usando Flexbox.',
+        description:
+          'Centrar un elemento tanto horizontal como verticalmente usando Flexbox.',
         targets: [
           'display: flex',
           'justify-content: center',
           'align-items: center',
-          'height: 100vh'
+          'height: 100vh',
         ],
         initialCode: `.contenedor {
   /* Tu código aquí */
@@ -180,18 +210,24 @@ export const challengesData_ES = {
   height: 200px;
   background: #3498db;
 }`,
-        concepts: ['Flexbox', 'Centrado vertical/horizontal', 'Viewport height', 'Reset básico']
+        concepts: [
+          'Flexbox',
+          'Centrado vertical/horizontal',
+          'Viewport height',
+          'Reset básico',
+        ],
       },
       {
         id: 'css-2',
         title: 'Grid Layout Responsive',
         level: 'Intermedio',
-        description: 'Crear un layout de grid que se adapte a diferentes tamaños de pantalla.',
+        description:
+          'Crear un layout de grid que se adapte a diferentes tamaños de pantalla.',
         targets: [
           'display: grid',
           'grid-template-columns con repeat() y auto-fit',
           'gap entre elementos',
-          'Media queries para personalización'
+          'Media queries para personalización',
         ],
         initialCode: `.galeria {
   /* Crea un grid responsive */
@@ -232,18 +268,25 @@ export const challengesData_ES = {
     gap: 16px;
   }
 }`,
-        concepts: ['CSS Grid', 'auto-fit y minmax', 'Responsive design', 'Media queries', 'Hover effects']
+        concepts: [
+          'CSS Grid',
+          'auto-fit y minmax',
+          'Responsive design',
+          'Media queries',
+          'Hover effects',
+        ],
       },
       {
         id: 'css-3',
         title: 'Animación de Botón',
         level: 'Intermedio',
-        description: 'Crear un botón interactivo con efectos hover y animations.',
+        description:
+          'Crear un botón interactivo con efectos hover y animations.',
         targets: [
           'transition para animaciones suaves',
           'transform y translate',
           'Pseudoclases (:hover, :active)',
-          'keyframes para animaciones'
+          'keyframes para animaciones',
         ],
         initialCode: `.btn {
   padding: 12px 24px;
@@ -296,9 +339,15 @@ export const challengesData_ES = {
 .btn:active {
   transform: translateY(0);
 }`,
-        concepts: ['Transiciones', 'Gradientes', 'Transformaciones', 'Pseudoelementos', 'Overflow hidden']
-      }
-    ]
+        concepts: [
+          'Transiciones',
+          'Gradientes',
+          'Transformaciones',
+          'Pseudoelementos',
+          'Overflow hidden',
+        ],
+      },
+    ],
   },
   javascript: {
     title: 'JavaScript',
@@ -309,12 +358,13 @@ export const challengesData_ES = {
         id: 'js-1',
         title: 'Calculadora Simple',
         level: 'Principiante',
-        description: 'Crear funciones básicas para realizar operaciones matemáticas.',
+        description:
+          'Crear funciones básicas para realizar operaciones matemáticas.',
         targets: [
           'Funciones con parámetros',
           'Operadores aritméticos',
           'Return de valores',
-          'Manejo de números'
+          'Manejo de números',
         ],
         initialCode: `// Crea funciones para:
 // - Sumar dos números
@@ -357,18 +407,25 @@ console.log(restar(10, 4));    // 6
 console.log(multiplicar(6, 7)); // 42
 console.log(dividir(20, 4));   // 5
 console.log(dividir(20, 0));   // null + mensaje de error`,
-        concepts: ['Funciones', 'Parámetros y argumentos', 'Return', 'Condicionales', 'Operadores']
+        concepts: [
+          'Funciones',
+          'Parámetros y argumentos',
+          'Return',
+          'Condicionales',
+          'Operadores',
+        ],
       },
       {
         id: 'js-2',
         title: 'Manipulación del DOM',
         level: 'Intermedio',
-        description: 'Crear, modificar y eliminar elementos del DOM dinámicamente.',
+        description:
+          'Crear, modificar y eliminar elementos del DOM dinámicamente.',
         targets: [
           'document.querySelector / querySelectorAll',
           'createElement, appendChild, remove',
           'Modificar textContent y classList',
-          'Event listeners'
+          'Event listeners',
         ],
         initialCode: `// Crea una lista de tareas donde puedas:
 // 1. Agregar nuevas tareas
@@ -421,7 +478,13 @@ input.addEventListener('keypress', (e) => {
     agregarTarea(input.value);
   }
 });`,
-        concepts: ['DOM manipulation', 'Event listeners', 'ClassList', 'Template literals', 'Conditional logic']
+        concepts: [
+          'DOM manipulation',
+          'Event listeners',
+          'ClassList',
+          'Template literals',
+          'Conditional logic',
+        ],
       },
       {
         id: 'js-3',
@@ -432,7 +495,7 @@ input.addEventListener('keypress', (e) => {
           'fetch API',
           'async/await',
           'try/catch para errores',
-          'Manipulación de JSON'
+          'Manipulación de JSON',
         ],
         initialCode: `// Consume datos de JSONPlaceholder
 // Muestra los primeros 5 posts con su título y cuerpo
@@ -478,9 +541,15 @@ obtenerPosts();`,
 }
 
 obtenerPosts();`,
-        concepts: ['Fetch API', 'Async/Await', 'Try/Catch', 'JSON handling', 'DOM manipulation']
-      }
-    ]
+        concepts: [
+          'Fetch API',
+          'Async/Await',
+          'Try/Catch',
+          'JSON handling',
+          'DOM manipulation',
+        ],
+      },
+    ],
   },
   react: {
     title: 'React JS',
@@ -496,7 +565,7 @@ obtenerPosts();`,
           'Crear componentes funcionales',
           'Props básicas',
           'JSX syntax',
-          'Renderizado de componentes'
+          'Renderizado de componentes',
         ],
         initialCode: `// Crea un componente Saludo que reciba un prop "nombre"
 // y muestre: "Hola, [nombre]! Bienvenido a React"
@@ -528,18 +597,25 @@ export default Saludo;
 // Uso:
 // <Saludo nombre="Carlos" idioma="es" />
 // <Saludo nombre="John" idioma="en" />`,
-        concepts: ['Componentes funcionales', 'Props', 'JSX', 'Valores por defecto', 'Renderizado']
+        concepts: [
+          'Componentes funcionales',
+          'Props',
+          'JSX',
+          'Valores por defecto',
+          'Renderizado',
+        ],
       },
       {
         id: 'react-2',
         title: 'Contador con useState',
         level: 'Principiante',
-        description: 'Crear un contador interactivo con botones para incrementar y decrementar.',
+        description:
+          'Crear un contador interactivo con botones para incrementar y decrementar.',
         targets: [
           'useState hook',
           'Event handlers',
           'Renderizado condicional',
-          'State updates'
+          'State updates',
         ],
         initialCode: `import { useState } from 'react';
 
@@ -608,18 +684,25 @@ function Contador({ valorInicial = 0, paso = 1 }) {
 }
 
 export default Contador;`,
-        concepts: ['useState', 'Event handlers', 'Conditional rendering', 'Arrays in state', 'Immutability']
+        concepts: [
+          'useState',
+          'Event handlers',
+          'Conditional rendering',
+          'Arrays in state',
+          'Immutability',
+        ],
       },
       {
         id: 'react-3',
         title: 'Lista de Tareas con useEffect',
         level: 'Intermedio',
-        description: 'Crear un gestor de tareas completo con persistencia local.',
+        description:
+          'Crear un gestor de tareas completo con persistencia local.',
         targets: [
           'useState para arrays',
           'useEffect para efectos secundarios',
           'localStorage para persistencia',
-          'CRUD básico'
+          'CRUD básico',
         ],
         initialCode: `import { useState, useEffect } from 'react';
 
@@ -744,9 +827,15 @@ function ListaTareas() {
 }
 
 export default ListaTareas;`,
-        concepts: ['useState', 'useEffect', 'localStorage', 'Array methods (map, filter)', 'Conditional classes']
-      }
-    ]
+        concepts: [
+          'useState',
+          'useEffect',
+          'localStorage',
+          'Array methods (map, filter)',
+          'Conditional classes',
+        ],
+      },
+    ],
   },
   redux: {
     title: 'Redux',
@@ -762,7 +851,7 @@ export default ListaTareas;`,
           'createStore de Redux',
           'Funciones reducer',
           'Acciones con type y payload',
-          'Dispatch de acciones'
+          'Dispatch de acciones',
         ],
         initialCode: `import { createStore } from 'redux';
 
@@ -829,7 +918,13 @@ store.dispatch(setValor(100));
 store.dispatch(reset());
 
 export default store;`,
-        concepts: ['Store', 'Reducers', 'Actions', 'Dispatch', 'State management']
+        concepts: [
+          'Store',
+          'Reducers',
+          'Actions',
+          'Dispatch',
+          'State management',
+        ],
       },
       {
         id: 'redux-2',
@@ -840,7 +935,7 @@ export default store;`,
           'configureStore',
           'createSlice',
           'createAsyncThunk (opcional)',
-          'Selectors'
+          'Selectors',
         ],
         initialCode: `import { configureStore, createSlice } from '@reduxjs/toolkit';
 
@@ -932,9 +1027,15 @@ const store = configureStore({
 });
 
 export default store;`,
-        concepts: ['Redux Toolkit', 'createSlice', 'configureStore', 'Selectors', 'Immer (mutaciones seguras)']
-      }
-    ]
+        concepts: [
+          'Redux Toolkit',
+          'createSlice',
+          'configureStore',
+          'Selectors',
+          'Immer (mutaciones seguras)',
+        ],
+      },
+    ],
   },
   nodejs: {
     title: 'Node.js',
@@ -945,12 +1046,13 @@ export default store;`,
         id: 'nodejs-1',
         title: 'Servidor HTTP Básico',
         level: 'Principiante',
-        description: 'Crear un servidor HTTP simple con Node.js usando el módulo http.',
+        description:
+          'Crear un servidor HTTP simple con Node.js usando el módulo http.',
         targets: [
           'Módulo http de Node.js',
           'Crear servidor con createServer',
           'Escuchar en puerto específico',
-          'Responder a peticiones GET'
+          'Responder a peticiones GET',
         ],
         initialCode: `const http = require('http');
 
@@ -1000,18 +1102,25 @@ const puerto = 3000;
 servidor.listen(puerto, () => {
   console.log(\`Servidor escuchando en http://localhost:\${puerto}\`);
 });`,
-        concepts: ['Módulo http', 'Servidor HTTP', 'Rutas', 'Status codes', 'Headers']
+        concepts: [
+          'Módulo http',
+          'Servidor HTTP',
+          'Rutas',
+          'Status codes',
+          'Headers',
+        ],
       },
       {
         id: 'nodejs-2',
         title: 'Express.js - Rutas y Middleware',
         level: 'Intermedio',
-        description: 'Crear una API REST con Express.js con rutas y middleware.',
+        description:
+          'Crear una API REST con Express.js con rutas y middleware.',
         targets: [
           'Framework Express.js',
           'Definir rutas GET, POST, PUT, DELETE',
           'Middleware personalizado',
-          'Manejo de errores'
+          'Manejo de errores',
         ],
         initialCode: `const express = require('express');
 const app = express();
@@ -1183,7 +1292,14 @@ const puerto = 3000;
 app.listen(puerto, () => {
   console.log(\`API escuchando en http://localhost:\${puerto}\`);
 });`,
-        concepts: ['Express.js', 'Rutas REST', 'Middleware', 'Status codes', 'Validación', 'CRUD']
+        concepts: [
+          'Express.js',
+          'Rutas REST',
+          'Middleware',
+          'Status codes',
+          'Validación',
+          'CRUD',
+        ],
       },
       {
         id: 'nodejs-3',
@@ -1194,7 +1310,7 @@ app.listen(puerto, () => {
           'Generar tokens JWT',
           'Verificar tokens',
           'Middleware de autenticación',
-          'Contraseñas hasheadas'
+          'Contraseñas hasheadas',
         ],
         initialCode: `const express = require('express');
 const jwt = require('jsonwebtoken');
@@ -1379,9 +1495,16 @@ app.post('/registro', async (req, res) => {
 app.listen(3000, () => {
   console.log('Servidor de autenticación en puerto 3000');
 });`,
-        concepts: ['JWT', 'Autenticación', 'Bcrypt', 'Middleware', 'Seguridad', 'Tokens']
-      }
-    ]
+        concepts: [
+          'JWT',
+          'Autenticación',
+          'Bcrypt',
+          'Middleware',
+          'Seguridad',
+          'Tokens',
+        ],
+      },
+    ],
   },
   mongodb: {
     title: 'MongoDB',
@@ -1397,7 +1520,7 @@ app.listen(3000, () => {
           'Conectar a MongoDB con mongoose',
           'Crear esquemas y modelos',
           'Insertar documentos',
-          'Consultar documentos'
+          'Consultar documentos',
         ],
         initialCode: `const mongoose = require('mongoose');
 
@@ -1526,18 +1649,26 @@ async function eliminarUsuario(id) {
 crearUsuario();
 obtenerTodos();
 buscarPorEmail('juan@ejemplo.com');`,
-        concepts: ['Mongoose', 'Esquemas', 'Modelos', 'CRUD', 'Validación', 'Async/Await']
+        concepts: [
+          'Mongoose',
+          'Esquemas',
+          'Modelos',
+          'CRUD',
+          'Validación',
+          'Async/Await',
+        ],
       },
       {
         id: 'mongodb-2',
         title: 'Relaciones y Poblamiento',
         level: 'Intermedio',
-        description: 'Trabajar con referencias entre colecciones y usar populate.',
+        description:
+          'Trabajar con referencias entre colecciones y usar populate.',
         targets: [
           'Crear referencias entre documentos',
           'Usar populate para obtener datos relacionados',
           'Validar referencias',
-          'Consultas con múltiples colecciones'
+          'Consultas con múltiples colecciones',
         ],
         initialCode: `const mongoose = require('mongoose');
 
@@ -1705,7 +1836,13 @@ async function actualizarDisponibilidad(libroId, disponible) {
   await obtenerLibroConAutor();
   await obtenerLibrosPorAutor('Gabriel García Márquez');
 })();`,
-        concepts: ['Referencias', 'Populate', 'Relaciones', 'ObjectId', 'Consultas relacionales']
+        concepts: [
+          'Referencias',
+          'Populate',
+          'Relaciones',
+          'ObjectId',
+          'Consultas relacionales',
+        ],
       },
       {
         id: 'mongodb-3',
@@ -1716,7 +1853,7 @@ async function actualizarDisponibilidad(libroId, disponible) {
           'Pipeline de agregación',
           'Stages: $match, $group, $sort, $limit',
           'Cálculos agregados',
-          'Análisis de datos'
+          'Análisis de datos',
         ],
         initialCode: `const mongoose = require('mongoose');
 
@@ -1901,9 +2038,16 @@ async function estadisticasGenerales() {
   await ventasPorMes();
   await estadisticasGenerales();
 })();`,
-        concepts: ['Agregación', 'Pipeline', '$group', '$match', '$sort', 'Análisis de datos']
-      }
-    ]
+        concepts: [
+          'Agregación',
+          'Pipeline',
+          '$group',
+          '$match',
+          '$sort',
+          'Análisis de datos',
+        ],
+      },
+    ],
   },
   mysql: {
     title: 'MySQL',
@@ -1914,12 +2058,13 @@ async function estadisticasGenerales() {
         id: 'mysql-1',
         title: 'Conexión y Consultas Básicas',
         level: 'Principiante',
-        description: 'Conectar a MySQL y realizar consultas SELECT, INSERT, UPDATE, DELETE.',
+        description:
+          'Conectar a MySQL y realizar consultas SELECT, INSERT, UPDATE, DELETE.',
         targets: [
           'Conectar a MySQL con Node.js',
           'Ejecutar consultas SELECT',
           'Insertar registros',
-          'Actualizar y eliminar datos'
+          'Actualizar y eliminar datos',
         ],
         initialCode: `const mysql = require('mysql2/promise');
 
@@ -2079,7 +2224,13 @@ async function eliminarUsuario(id) {
   await actualizarUsuario(1, 'Juan Pérez', 'juan.perez@ejemplo.com', 29);
   await obtenerTodos();
 })();`,
-        concepts: ['Conexión MySQL', 'Pool de conexiones', 'Prepared statements', 'CRUD', 'Async/Await']
+        concepts: [
+          'Conexión MySQL',
+          'Pool de conexiones',
+          'Prepared statements',
+          'CRUD',
+          'Async/Await',
+        ],
       },
       {
         id: 'mysql-2',
@@ -2090,7 +2241,7 @@ async function eliminarUsuario(id) {
           'Crear tablas relacionadas',
           'Foreign keys',
           'INNER JOIN, LEFT JOIN',
-          'Consultas con múltiples tablas'
+          'Consultas con múltiples tablas',
         ],
         initialCode: `const mysql = require('mysql2/promise');
 
@@ -2302,18 +2453,26 @@ async function obtenerEstadisticas() {
   await obtenerPedidosConUsuario();
   await obtenerEstadisticas();
 })();`,
-        concepts: ['Foreign keys', 'INNER JOIN', 'LEFT JOIN', 'GROUP BY', 'Relaciones', 'Agregaciones']
+        concepts: [
+          'Foreign keys',
+          'INNER JOIN',
+          'LEFT JOIN',
+          'GROUP BY',
+          'Relaciones',
+          'Agregaciones',
+        ],
       },
       {
         id: 'mysql-3',
         title: 'Transacciones y Procedimientos',
         level: 'Avanzado',
-        description: 'Usar transacciones y procedimientos almacenados en MySQL.',
+        description:
+          'Usar transacciones y procedimientos almacenados en MySQL.',
         targets: [
           'Transacciones ACID',
           'BEGIN, COMMIT, ROLLBACK',
           'Procedimientos almacenados',
-          'Manejo de errores'
+          'Manejo de errores',
         ],
         initialCode: `const mysql = require('mysql2/promise');
 
@@ -2439,13 +2598,35 @@ async function insertarDatos() {
   await crearProcedimiento();
   await llamarProcedimiento('001');
 })();`,
-        concepts: ['Transacciones', 'ACID', 'BEGIN/COMMIT/ROLLBACK', 'Procedimientos', 'Integridad de datos']
-      }
-    ]
-  }
-}
+        concepts: [
+          'Transacciones',
+          'ACID',
+          'BEGIN/COMMIT/ROLLBACK',
+          'Procedimientos',
+          'Integridad de datos',
+        ],
+      },
+    ],
+  },
+};
 
 export const challengesData_EN = {
+  general: {
+    title: 'Keep practicing!',
+    paragraph:
+      'The best way to learn programming is by practicing. Complete the challenges and develop your skills step by step.',
+    target: 'targets',
+    challenge: 'challenges',
+    objectives: 'Learning Objectives',
+    code: 'Starter Code',
+    concepts: 'Key Concepts',
+    showSol: 'Show solution',
+    hideSol: 'Hide solution',
+    solution: 'Proposed Solution',
+    copy: 'Copy',
+    copied: 'Copied',
+    backToCh: 'Back to the challenge list',
+  },
   html: {
     title: 'HTML',
     description: 'Markup language for structuring web content',
@@ -2461,7 +2642,7 @@ export const challengesData_EN = {
           'Declaration DOCTYPE',
           'Elements <html>, <head>, <body>',
           'Metadata (charset, viewport, title)',
-          'Semantic labels (<header>, <nav>, <main>, <section>, <footer>)'
+          'Semantic labels (<header>, <nav>, <main>, <section>, <footer>)',
         ],
         initialCode: `<!DOCTYPE html>
 <html lang="es">
@@ -2501,7 +2682,7 @@ export const challengesData_EN = {
   </footer>
 </body>
 </html>`,
-        concepts: ['DOCTYPE', 'Semantic HTML5', 'Metadata', 'Accesibility']
+        concepts: ['DOCTYPE', 'Semantic HTML5', 'Metadata', 'Accesibility'],
       },
       {
         id: 'html-2',
@@ -2513,7 +2694,7 @@ export const challengesData_EN = {
           'Inputs text, email, textarea',
           'Oblogatory fields (required)',
           'Asociate labels',
-          'Submit button'
+          'Submit button',
         ],
         initialCode: `<form>
   <!-- Make your formulary here -->
@@ -2543,7 +2724,12 @@ export const challengesData_EN = {
   </div>
   <button type="submit">Submit message</button>
 </form>`,
-        concepts: ['HTML forms', 'Input types', 'Validate HTML5', 'Accesibility']
+        concepts: [
+          'HTML forms',
+          'Input types',
+          'Validate HTML5',
+          'Accesibility',
+        ],
       },
       {
         id: 'html-3',
@@ -2555,7 +2741,7 @@ export const challengesData_EN = {
           'Labels <figure> y <figcaption>',
           'Responsive images with srcset',
           'Links to full iamges',
-          'Grid layout with CSS (soon)'
+          'Grid layout with CSS (soon)',
         ],
         initialCode: `<div class="galeria">
   <!-- Create you 4 images gallery -->
@@ -2586,9 +2772,14 @@ export const challengesData_EN = {
     <figcaption>Imagen 4</figcaption>
   </figure>
 </div>`,
-        concepts: ['Figure y figcaption', 'Optimización de imágenes', 'Galerías', 'Accesibilidad visual']
-      }
-    ]
+        concepts: [
+          'Figure y figcaption',
+          'Image optimization',
+          'Galleries',
+          'Visual accesibility',
+        ],
+      },
+    ],
   },
 
   css: {
@@ -2606,7 +2797,7 @@ export const challengesData_EN = {
           'display: flex',
           'justify-content: center',
           'align-items: center',
-          'height: 100vh'
+          'height: 100vh',
         ],
         initialCode: `.contenedor {
   /* Tu código aquí */
@@ -2630,7 +2821,12 @@ export const challengesData_EN = {
   height: 200px;
   background: #3498db;
 }`,
-        concepts: ['Flexbox', 'Centrado vertical/horizontal', 'Viewport height', 'Reset básico']
+        concepts: [
+          'Flexbox',
+          'Vertical/horizontal centered',
+          'Viewport height',
+          'Basic reset',
+        ],
       },
       {
         id: 'css-2',
@@ -2642,7 +2838,7 @@ export const challengesData_EN = {
           'display: grid',
           'grid-template-columns con repeat() y auto-fit',
           'gap entre elementos',
-          'Media queries para personalización'
+          'Media queries para personalización',
         ],
         initialCode: `.galeria {
   /* Crea un grid responsive */
@@ -2683,7 +2879,13 @@ export const challengesData_EN = {
     gap: 16px;
   }
 }`,
-        concepts: ['CSS Grid', 'auto-fit y minmax', 'Responsive design', 'Media queries', 'Hover effects']
+        concepts: [
+          'CSS Grid',
+          'auto-fit y minmax',
+          'Responsive design',
+          'Media queries',
+          'Hover effects',
+        ],
       },
       {
         id: 'css-3',
@@ -2695,7 +2897,7 @@ export const challengesData_EN = {
           'transition para animaciones suaves',
           'transform y translate',
           'Pseudoclases (:hover, :active)',
-          'keyframes para animaciones'
+          'keyframes para animaciones',
         ],
         initialCode: `.btn {
   padding: 12px 24px;
@@ -2748,9 +2950,15 @@ export const challengesData_EN = {
 .btn:active {
   transform: translateY(0);
 }`,
-        concepts: ['Transiciones', 'Gradientes', 'Transformaciones', 'Pseudoelementos', 'Overflow hidden']
-      }
-    ]
+        concepts: [
+          'Transitions',
+          'Gradients',
+          'Transforms',
+          'Pseudoelements',
+          'Overflow hidden',
+        ],
+      },
+    ],
   },
 
   javascript: {
@@ -2768,7 +2976,7 @@ export const challengesData_EN = {
           'Funciones con parámetros',
           'Operadores aritméticos',
           'Return de valores',
-          'Manejo de números'
+          'Manejo de números',
         ],
         initialCode: `// Crea funciones para:
 // - Sumar dos números
@@ -2811,19 +3019,24 @@ console.log(restar(10, 4));    // 6
 console.log(multiplicar(6, 7)); // 42
 console.log(dividir(20, 4));   // 5
 console.log(dividir(20, 0));   // null + mensaje de error`,
-        concepts: ['Funciones', 'Parámetros y argumentos', 'Return', 'Condicionales', 'Operadores']
+        concepts: [
+          'Fucntions',
+          'Parameters & arguments',
+          'Return',
+          'Conditionals',
+          'Operators',
+        ],
       },
       {
         id: 'js-2',
         title: 'DOM Manipulation',
         level: 'Intermediate',
-        description:
-          'Create, modify, and remove DOM elements dynamically.',
+        description: 'Create, modify, and remove DOM elements dynamically.',
         targets: [
           'document.querySelector / querySelectorAll',
           'createElement, appendChild, remove',
           'Modificar textContent y classList',
-          'Event listeners'
+          'Event listeners',
         ],
         initialCode: `// Crea una lista de tareas donde puedas:
 // 1. Agregar nuevas tareas
@@ -2876,19 +3089,24 @@ input.addEventListener('keypress', (e) => {
     agregarTarea(input.value);
   }
 });`,
-        concepts: ['DOM manipulation', 'Event listeners', 'ClassList', 'Template literals', 'Conditional logic']
+        concepts: [
+          'DOM manipulation',
+          'Event listeners',
+          'ClassList',
+          'Template literals',
+          'Conditional logic',
+        ],
       },
       {
         id: 'js-3',
         title: 'API Fetch and Async/Await',
         level: 'Advanced',
-        description:
-          'Consume data from a public API using async/await.',
+        description: 'Consume data from a public API using async/await.',
         targets: [
           'fetch API',
           'async/await',
           'try/catch para errores',
-          'Manipulación de JSON'
+          'Manipulación de JSON',
         ],
         initialCode: `// Consume datos de JSONPlaceholder
 // Muestra los primeros 5 posts con su título y cuerpo
@@ -2934,9 +3152,15 @@ obtenerPosts();`,
 }
 
 obtenerPosts();`,
-        concepts: ['Fetch API', 'Async/Await', 'Try/Catch', 'JSON handling', 'DOM manipulation']
-      }
-    ]
+        concepts: [
+          'Fetch API',
+          'Async/Await',
+          'Try/Catch',
+          'JSON handling',
+          'DOM manipulation',
+        ],
+      },
+    ],
   },
 
   react: {
@@ -2948,13 +3172,12 @@ obtenerPosts();`,
         id: 'react-1',
         title: 'My First Component',
         level: 'Beginner',
-        description:
-          'Create and render a basic functional component.',
+        description: 'Create and render a basic functional component.',
         targets: [
           'Crear componentes funcionales',
           'Props básicas',
           'JSX syntax',
-          'Renderizado de componentes'
+          'Renderizado de componentes',
         ],
         initialCode: `// Crea un componente Saludo que reciba un prop "nombre"
 // y muestre: "Hola, [nombre]! Bienvenido a React"
@@ -2986,7 +3209,13 @@ export default Saludo;
 // Uso:
 // <Saludo nombre="Carlos" idioma="es" />
 // <Saludo nombre="John" idioma="en" />`,
-        concepts: ['Componentes funcionales', 'Props', 'JSX', 'Valores por defecto', 'Renderizado']
+        concepts: [
+          'Fucntionc componnts',
+          'Props',
+          'JSX',
+          'Default values',
+          'Render',
+        ],
       },
       {
         id: 'react-2',
@@ -2998,7 +3227,7 @@ export default Saludo;
           'useState hook',
           'Event handlers',
           'Renderizado condicional',
-          'State updates'
+          'State updates',
         ],
         initialCode: `import { useState } from 'react';
 
@@ -3067,19 +3296,24 @@ function Contador({ valorInicial = 0, paso = 1 }) {
 }
 
 export default Contador;`,
-        concepts: ['useState', 'Event handlers', 'Conditional rendering', 'Arrays in state', 'Immutability']
+        concepts: [
+          'useState',
+          'Event handlers',
+          'Conditional rendering',
+          'Arrays in state',
+          'Immutability',
+        ],
       },
       {
         id: 'react-3',
         title: 'Todo List with useEffect',
         level: 'Intermediate',
-        description:
-          'Create a complete task manager with local persistence.',
+        description: 'Create a complete task manager with local persistence.',
         targets: [
           'useState para arrays',
           'useEffect para efectos secundarios',
           'localStorage para persistencia',
-          'CRUD básico'
+          'CRUD básico',
         ],
         initialCode: `import { useState, useEffect } from 'react';
 
@@ -3204,9 +3438,15 @@ function ListaTareas() {
 }
 
 export default ListaTareas;`,
-        concepts: ['useState', 'useEffect', 'localStorage', 'Array methods (map, filter)', 'Conditional classes']
-      }
-    ]
+        concepts: [
+          'useState',
+          'useEffect',
+          'localStorage',
+          'Array methods (map, filter)',
+          'Conditional classes',
+        ],
+      },
+    ],
   },
 
   redux: {
@@ -3218,13 +3458,12 @@ export default ListaTareas;`,
         id: 'redux-1',
         title: 'Store and Reducers',
         level: 'Intermediate',
-        description:
-          'Set up a Redux store with a basic reducer.',
+        description: 'Set up a Redux store with a basic reducer.',
         targets: [
           'createStore de Redux',
           'Funciones reducer',
           'Acciones con type y payload',
-          'Dispatch de acciones'
+          'Dispatch de acciones',
         ],
         initialCode: `import { createStore } from 'redux';
 
@@ -3291,19 +3530,24 @@ store.dispatch(setValor(100));
 store.dispatch(reset());
 
 export default store;`,
-        concepts: ['Store', 'Reducers', 'Actions', 'Dispatch', 'State management']
+        concepts: [
+          'Store',
+          'Reducers',
+          'Actions',
+          'Dispatch',
+          'State management',
+        ],
       },
       {
         id: 'redux-2',
         title: 'Modern Redux Toolkit',
         level: 'Intermediate',
-        description:
-          'Use Redux Toolkit to simplify the setup.',
+        description: 'Use Redux Toolkit to simplify the setup.',
         targets: [
           'configureStore',
           'createSlice',
           'createAsyncThunk (opcional)',
-          'Selectors'
+          'Selectors',
         ],
         initialCode: `import { configureStore, createSlice } from '@reduxjs/toolkit';
 
@@ -3395,9 +3639,15 @@ const store = configureStore({
 });
 
 export default store;`,
-        concepts: ['Redux Toolkit', 'createSlice', 'configureStore', 'Selectors', 'Immer (mutaciones seguras)']
-      }
-    ]
+        concepts: [
+          'Redux Toolkit',
+          'createSlice',
+          'configureStore',
+          'Selectors',
+          'Immer (secure nmutations)',
+        ],
+      },
+    ],
   },
 
   nodejs: {
@@ -3415,7 +3665,7 @@ export default store;`,
           'Módulo http de Node.js',
           'Crear servidor con createServer',
           'Escuchar en puerto específico',
-          'Responder a peticiones GET'
+          'Responder a peticiones GET',
         ],
         initialCode: `const http = require('http');
 
@@ -3465,7 +3715,13 @@ const puerto = 3000;
 servidor.listen(puerto, () => {
   console.log(\`Servidor escuchando en http://localhost:\${puerto}\`);
 });`,
-        concepts: ['Módulo http', 'Servidor HTTP', 'Rutas', 'Status codes', 'Headers']
+        concepts: [
+          'HTTP Module',
+          'HTTP Server',
+          'Rutes',
+          'Status codes',
+          'Headers',
+        ],
       },
       {
         id: 'nodejs-2',
@@ -3477,7 +3733,7 @@ servidor.listen(puerto, () => {
           'Framework Express.js',
           'Definir rutas GET, POST, PUT, DELETE',
           'Middleware personalizado',
-          'Manejo de errores'
+          'Manejo de errores',
         ],
         initialCode: `const express = require('express');
 const app = express();
@@ -3649,19 +3905,25 @@ const puerto = 3000;
 app.listen(puerto, () => {
   console.log(\`API escuchando en http://localhost:\${puerto}\`);
 });`,
-        concepts: ['Express.js', 'Rutas REST', 'Middleware', 'Status codes', 'Validación', 'CRUD']
+        concepts: [
+          'Express.js',
+          'REST endpoint',
+          'Middleware',
+          'Status codes',
+          'Validation',
+          'CRUD',
+        ],
       },
       {
         id: 'nodejs-3',
         title: 'Authentication with JWT',
         level: 'Advanced',
-        description:
-          'Implement authentication with JSON Web Tokens (JWT).',
+        description: 'Implement authentication with JSON Web Tokens (JWT).',
         targets: [
           'Generar tokens JWT',
           'Verificar tokens',
           'Middleware de autenticación',
-          'Contraseñas hasheadas'
+          'Contraseñas hasheadas',
         ],
         initialCode: `const express = require('express');
 const jwt = require('jsonwebtoken');
@@ -3846,9 +4108,16 @@ app.post('/registro', async (req, res) => {
 app.listen(3000, () => {
   console.log('Servidor de autenticación en puerto 3000');
 });`,
-        concepts: ['JWT', 'Autenticación', 'Bcrypt', 'Middleware', 'Seguridad', 'Tokens']
-      }
-    ]
+        concepts: [
+          'JWT',
+          'Autenticatión',
+          'Bcrypt',
+          'Middleware',
+          'Security',
+          'Tokens',
+        ],
+      },
+    ],
   },
 
   mongodb: {
@@ -3860,13 +4129,12 @@ app.listen(3000, () => {
         id: 'mongodb-1',
         title: 'Connection and Basic Operations',
         level: 'Beginner',
-        description:
-          'Connect to MongoDB and perform basic CRUD operations.',
+        description: 'Connect to MongoDB and perform basic CRUD operations.',
         targets: [
           'Conectar a MongoDB con mongoose',
           'Crear esquemas y modelos',
           'Insertar documentos',
-          'Consultar documentos'
+          'Consultar documentos',
         ],
         initialCode: `const mongoose = require('mongoose');
 
@@ -3995,7 +4263,14 @@ async function eliminarUsuario(id) {
 crearUsuario();
 obtenerTodos();
 buscarPorEmail('juan@ejemplo.com');`,
-        concepts: ['Mongoose', 'Esquemas', 'Modelos', 'CRUD', 'Validación', 'Async/Await']
+        concepts: [
+          'Mongoose',
+          'Schemas',
+          'Models',
+          'CRUD',
+          'Validation',
+          'Async/Await',
+        ],
       },
       {
         id: 'mongodb-2',
@@ -4007,7 +4282,7 @@ buscarPorEmail('juan@ejemplo.com');`,
           'Crear referencias entre documentos',
           'Usar populate para obtener datos relacionados',
           'Validar referencias',
-          'Consultas con múltiples colecciones'
+          'Consultas con múltiples colecciones',
         ],
         initialCode: `const mongoose = require('mongoose');
 
@@ -4175,19 +4450,18 @@ async function actualizarDisponibilidad(libroId, disponible) {
   await obtenerLibroConAutor();
   await obtenerLibrosPorAutor('Gabriel García Márquez');
 })();`,
-        concepts: ['Referencias', 'Populate', 'Relaciones', 'ObjectId', 'Consultas relacionales']
+        concepts: ['References', 'Populate', 'Relations', 'ObjectId', 'Querys'],
       },
       {
         id: 'mongodb-3',
         title: 'Aggregations and Analysis',
         level: 'Advanced',
-        description:
-          'Use the aggregation pipeline for complex analysis.',
+        description: 'Use the aggregation pipeline for complex analysis.',
         targets: [
           'Pipeline de agregación',
           'Stages: $match, $group, $sort, $limit',
           'Cálculos agregados',
-          'Análisis de datos'
+          'Análisis de datos',
         ],
         initialCode: `const mongoose = require('mongoose');
 
@@ -4372,9 +4646,16 @@ async function estadisticasGenerales() {
   await ventasPorMes();
   await estadisticasGenerales();
 })();`,
-        concepts: ['Agregación', 'Pipeline', '$group', '$match', '$sort', 'Análisis de datos']
-      }
-    ]
+        concepts: [
+          'Agregatte',
+          'Pipeline',
+          '$group',
+          '$match',
+          '$sort',
+          'Data analist',
+        ],
+      },
+    ],
   },
 
   mysql: {
@@ -4392,7 +4673,7 @@ async function estadisticasGenerales() {
           'Conectar a MySQL con Node.js',
           'Ejecutar consultas SELECT',
           'Insertar registros',
-          'Actualizar y eliminar datos'
+          'Actualizar y eliminar datos',
         ],
         initialCode: `const mysql = require('mysql2/promise');
 
@@ -4552,19 +4833,24 @@ async function eliminarUsuario(id) {
   await actualizarUsuario(1, 'Juan Pérez', 'juan.perez@ejemplo.com', 29);
   await obtenerTodos();
 })();`,
-        concepts: ['Conexión MySQL', 'Pool de conexiones', 'Prepared statements', 'CRUD', 'Async/Await']
+        concepts: [
+          'MySQL Conn',
+          'Pools`s Conn',
+          'Prepared statements',
+          'CRUD',
+          'Async/Await',
+        ],
       },
       {
         id: 'mysql-2',
         title: 'Relationships and JOINs',
         level: 'Intermediate',
-        description:
-          'Work with relationships between tables using JOINs.',
+        description: 'Work with relationships between tables using JOINs.',
         targets: [
           'Crear tablas relacionadas',
           'Foreign keys',
           'INNER JOIN, LEFT JOIN',
-          'Consultas con múltiples tablas'
+          'Consultas con múltiples tablas',
         ],
         initialCode: `const mysql = require('mysql2/promise');
 
@@ -4776,19 +5062,25 @@ async function obtenerEstadisticas() {
   await obtenerPedidosConUsuario();
   await obtenerEstadisticas();
 })();`,
-        concepts: ['Foreign keys', 'INNER JOIN', 'LEFT JOIN', 'GROUP BY', 'Relaciones', 'Agregaciones']
+        concepts: [
+          'Foreign keys',
+          'INNER JOIN',
+          'LEFT JOIN',
+          'GROUP BY',
+          'Relations',
+          'Agregations',
+        ],
       },
       {
         id: 'mysql-3',
         title: 'Transactions and Procedures',
         level: 'Advanced',
-        description:
-          'Use transactions and stored procedures in MySQL.',
+        description: 'Use transactions and stored procedures in MySQL.',
         targets: [
           'Transacciones ACID',
           'BEGIN, COMMIT, ROLLBACK',
           'Procedimientos almacenados',
-          'Manejo de errores'
+          'Manejo de errores',
         ],
         initialCode: `const mysql = require('mysql2/promise');
 
@@ -4914,8 +5206,14 @@ async function insertarDatos() {
   await crearProcedimiento();
   await llamarProcedimiento('001');
 })();`,
-        concepts: ['Transacciones', 'ACID', 'BEGIN/COMMIT/ROLLBACK', 'Procedimientos', 'Integridad de datos']
-      }
-    ]
-  }
+        concepts: [
+          'Transactions',
+          'ACID',
+          'BEGIN/COMMIT/ROLLBACK',
+          'Procedures',
+          'Data integrity',
+        ],
+      },
+    ],
+  },
 };

@@ -1,5 +1,8 @@
 .portfolio-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
 }
 
 /* Main Component */
@@ -14,12 +17,12 @@
   animation: slideUp 0.5s ease forwards;
   animation-delay: var(--delay, 0.1s);
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(1.25rem);
 }
 
 .info-box,
 .contact-box {
-  margin-top: 2rem;
+  height: auto;
 }
 
 .info-photo {
@@ -29,13 +32,13 @@
 
   & .photo-author {
     width: 100%;
-    max-width: 420px;
+    max-width: 26.25rem;
     height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 50%;
     display: block;
-    background: rgba(255, 255, 255,0.8);
+    background: rgba(255, 255, 255, 0.8);
   }
 }
 
@@ -97,7 +100,7 @@
   gap: 0.5rem;
 
   &:hover {
-    transform: translateY(-1px);
+    transform: translateY(-0.0625rem);
     filter: drop-shadow(0 0 1em #ffffffaa);
     color: var(--color-font);
   }
@@ -106,9 +109,9 @@
 .mapContainer {
   width: 70%;
   max-width: 100%;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
 }
 
 .locationNote {
@@ -117,7 +120,7 @@
 }
 
 .cw-fab:active {
-  transform: translateY(0px);
+  transform: translateY(0rem);
   filter: brightness(0.98);
 }
 
@@ -141,7 +144,7 @@
 
   & .img-section {
     width: 100%;
-    max-width: 420px;
+    max-width: 26.25rem;
     height: auto;
     object-fit: cover;
     border-radius: var(--radius-xl);
@@ -151,7 +154,7 @@
 }
 
 .skills-tags {
-  border: 1px solid white;
+  border: 0.0625rem solid white;
   border-radius: var(--radius-sm);
   padding: 0.5rem;
   color: var(--cw-muted);
@@ -174,7 +177,7 @@
   }
 }
 
-@media (max-width: 485px) {
+@media (max-width: 30.3125rem) {
   .info-photo {
     margin-inline: 1rem;
   }
@@ -184,7 +187,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .info-box,
   .skills-box,
   .contact-box {
@@ -193,7 +196,7 @@
   }
 
   .photo-author {
-    max-width: 320px;
+    max-width: 20rem;
   }
 
   .info-text,

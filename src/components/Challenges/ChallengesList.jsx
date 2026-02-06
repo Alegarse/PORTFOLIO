@@ -1,9 +1,10 @@
-import React from "react";
-import { ChevronRight, Star, Award, Target } from "lucide-react";
-import { useSelector } from "react-redux";
+import React from 'react';
+import { ChevronRight, Star, Award, Target } from 'lucide-react';
+import { useSelector } from 'react-redux';
 
 const ChallengesList = ({
   challenges,
+  general,
   devLanguageSelected,
   onHandleSelectChallenge,
 }) => {
@@ -18,7 +19,7 @@ const ChallengesList = ({
         </div>
         <div className="stats-lenguaje">
           <span className="badge-cantidad">
-            {challenges.challenges.length} desafíos
+            {challenges.challenges.length} {general.challenge}
           </span>
         </div>
       </header>
@@ -29,17 +30,17 @@ const ChallengesList = ({
             key={challenge.id}
             className="tarjeta-desafio"
             onClick={() => onHandleSelectChallenge(challenge)}
-            style={{ "--delay": `${index * 0.1}s` }}
+            style={{ '--delay': `${index * 0.1}s` }}
           >
             <div className="numero-desafio">
-              {String(index + 1).padStart(2, "0")}
+              {String(index + 1).padStart(2, '0')}
             </div>
 
             <div className="contenido-tarjeta">
               <span
-                className={`level-badge ${challenge.level.includes("Principiante") ? "principiante" : challenge.level.includes("Intermedio") ? "intermedio" : "avanzado"}`}
+                className={`level-badge ${challenge.level.includes('Principiante') ? 'principiante' : challenge.level.includes('Intermedio') ? 'intermedio' : 'avanzado'}`}
               >
-                {challenge.level.split(" ")[0]}
+                {challenge.level.split(' ')[0]}
               </span>
 
               <h3>{challenge.title}</h3>
@@ -47,7 +48,9 @@ const ChallengesList = ({
 
               <div className="targets-preview">
                 <Target size={16} />
-                <span>{challenge.targets.length} targets de aprendizaje</span>
+                <span>
+                  {challenge.targets.length} {general.target}
+                </span>
               </div>
             </div>
           </article>
@@ -59,11 +62,8 @@ const ChallengesList = ({
           <Award size={40} />
         </div>
         <div className="texto-inspirador">
-          <h3>¡Sigue practicando!</h3>
-          <p>
-            La mejor manera de aprender programación es practicando. Completa
-            los desafíos y desarrolla tus habilidades paso a paso.
-          </p>
+          <h3>{general.title}</h3>
+          <p>{general.paragraph}</p>
         </div>
       </div>
     </div>
