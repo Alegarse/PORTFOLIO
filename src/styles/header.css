@@ -132,7 +132,8 @@ select:focus-visible {
   }
 }
 @media (max-width: 43.4375rem) {
-  .header-author-name {
+  .header-author-name,
+  .header-logo {
     display: none;
   }
 }
