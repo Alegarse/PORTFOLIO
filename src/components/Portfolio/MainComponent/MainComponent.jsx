@@ -1,7 +1,7 @@
 import React from 'react';
 import data from '../../../core/data/portfolioData';
 import { useSelector } from 'react-redux';
-import photo from '../../../assets/author-photo2.png';
+import photo from '../../../assets/author-photo.png';
 import icon_pdf from '../../../assets/pdf.svg';
 
 const MainComponent = () => {
