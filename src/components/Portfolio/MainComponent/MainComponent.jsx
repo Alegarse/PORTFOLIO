@@ -7,7 +7,7 @@ import icon_pdf from '../../../assets/pdf.svg';
 const MainComponent = () => {
   const { language } = useSelector((state) => state.menuComponentReducer);
   let cvUrl = `${import.meta.env.BASE_URL}cv.html`;
-  if (language === 'en') cvUrl = `${import.meta.env.BASE_URL}cv_en.html`;
+  //if (language === 'en') cvUrl = `${import.meta.env.BASE_URL}cv_en.html`;
   return (
     <>
       <section className="info-box container">
