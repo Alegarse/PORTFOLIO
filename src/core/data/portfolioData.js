@@ -9,8 +9,8 @@ const data = {
     en: 'I am a programmer who works as a trainer specialized in software development. Before that, I worked as a team leader and Full Stack software analyst.\nI am passionate about everything related to development and project creation, as well as team management using Agile methodologies.\nIn my work, I combine methodologies focused on learning from scratch with advanced training and programming, so that my students acquire a distinctive edge.\nI am particularly interested in learning new programming languages and development methodologies.',
   },
   more_info: {
-    es: 'Más info',
-    en: 'More info',
+    es: 'Más información técnica',
+    en: 'More technical information',
   },
   nav_me:{
     es:"Acerca de mí",
