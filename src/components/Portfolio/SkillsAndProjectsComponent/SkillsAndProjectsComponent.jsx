@@ -8,11 +8,13 @@ import ProjectComponent from './ProjectComponent';
 const SkillsAndProjectsComponent = () => {
   return (
     <>
+      {/*
       <div className="skills-container">
         <SkillComponent classSection="front" photoSrc={img_front} />
         <SkillComponent classSection="back" photoSrc={img_back} />
         <SkillComponent classSection="bbdd" photoSrc={img_bbdd} />
       </div>
+     */}
       <div className="projects-container">
         <ProjectComponent classSection="prtf" photoSrc={img_front} />
       </div>
