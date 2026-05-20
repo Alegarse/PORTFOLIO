@@ -130,7 +130,8 @@
   object-fit: contain;
 }
 
-.skills-container {
+.skills-container,
+.projects-container {
   display: flex;
   flex-direction: column;
   align-items: center;
