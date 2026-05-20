@@ -17,8 +17,8 @@ const data = {
     en: 'About me',
   },
   nav_skills: {
-    es: 'Habilidades',
-    en: 'Skills',
+    es: 'Proyectos',
+    en: 'Projects',
   },
   skills_front_title: {
     es: 'frontEnd',
@@ -75,11 +75,21 @@ const data = {
     en: 'Personal Web Portfolio',
   },
   project_prtf_desc: {
-    es: 'Portfolio web personal desarrollado en React.js con gestión de estado global a través de redux, rutas dinámicas e interactividad.\nIncluye sección de habilidades, presentación profesional y enlace a repositorios, además de una sección aprendizaje',
-    en: 'Personal web portfolio developed in React.js with global state management through redux, dynamic paths and interactivity.\nIncludes skills section, professional presentation and link to repositories; also include a learning section',
+    es: 'Este portfolio web personal desarrollado en React.js con gestión de estado global a través de redux, rutas dinámicas e interactividad.\nIncluye sección de habilidades, presentación profesional y enlace a repositorios, además de una sección aprendizaje',
+    en: 'This personal web portfolio developed in React.js with global state management through redux, dynamic paths and interactivity.\nIncludes skills section, professional presentation and link to repositories; also include a learning section',
   },
   project_prtf_tags:
     'HTML · CSS · JavaScript · React.JS · Redux · Vite · Responsive Design',
+  project_filmax_title: {
+    es: 'Filmax',
+    en: 'Filmax',
+  },
+  project_filmax_desc: {
+    es: 'Página Filmax de contenido de información de películas, con diferentes listados según actualidad, puntuación, etc... con posibilidad de buscar por nombre.\n Realizada en ReactTS con Zustand y TanStackQuery para manejos de estado del lado de cliente y servidor.',
+    en: 'Personal web portfolio developed in React.js with global state management through redux, dynamic paths and interactivity.\nIncludes skills section, professional presentation and link to repositories; also include a learning section',
+  },
+  project_filmax_tags:
+    'HTML · CSS · JavaScript · React.TS · Zustand · TanStack Query · Vite',
 };
 
 export default data;

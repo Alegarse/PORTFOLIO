@@ -8,7 +8,7 @@ function ImageCarousel({ images }) {
   const next = () => setCurrent((current + 1) % total);
 
   return (
-    <div style={{ position: 'relative', overflow: 'hidden', width: '80%' ,border: '1px solid grey'}}>
+    <div style={{ position: 'relative', overflow: 'hidden', width: '80%'}}>
       <div
         style={{
           display: 'flex',
@@ -20,8 +20,9 @@ function ImageCarousel({ images }) {
           <img
             key={i}
             src={src}
+            className='img-carousel'
             alt={`skill ${i + 1}`}
-            style={{ minWidth: '100%', objectFit: 'cover' }}
+            style={{ minWidth: '100%', position: 'center' }}
           />
         ))}
       </div>

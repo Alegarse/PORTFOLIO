@@ -138,6 +138,16 @@
   gap: 3rem;
 }
 
+.img-carousel {
+  width: 100%;
+    max-width: 26.25rem;
+    height: auto;
+    object-fit: contain;
+    border-radius: var(--radius-xl);
+    border: 2px solid var(--color-font);
+    display: block;
+}
+
 .skills-img {
   display: flex;
   justify-content: center;

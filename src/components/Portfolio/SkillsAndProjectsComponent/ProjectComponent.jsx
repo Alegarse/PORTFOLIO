@@ -3,14 +3,8 @@ import { useSelector } from 'react-redux';
 import data from '../../../core/data/portfolioData';
 import ImageCarousel from '../../ImageCarousel/ImageCarousel';
 
-/** Iamges import */
-import img1 from '../../../assets/prtf1.png';
-import img2 from '../../../assets/prtf2.png';
-import img3 from '../../../assets/prtf3.png';
-import img4 from '../../../assets/prtf4.png';
-
 const ProjectComponent = (props) => {
-  const { classSection, photoSrc } = props;
+  const { classSection, photoSrc, images } = props;
 
   const [content, setContent] = useState({
     title: '',
@@ -35,7 +29,7 @@ const ProjectComponent = (props) => {
   return (
     <section className="skills-box container">
       <div className="skills-img">
-        <ImageCarousel images={[img1, img2, img3, img4]} />
+        <ImageCarousel images={images} />
       </div>
 
       <div className="skills-text">
