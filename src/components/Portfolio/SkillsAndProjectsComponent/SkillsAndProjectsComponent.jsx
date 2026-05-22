@@ -11,6 +11,9 @@ import prtf2 from '../../../assets/prtf2.png';
 import prtf3 from '../../../assets/prtf3.png';
 import filmax1 from '../../../assets/filmax1.png';
 import filmax2 from '../../../assets/filmax2.png';
+import api1 from '../../../assets/api1.png';
+import api2 from '../../../assets/api2.png';
+import api3 from '../../../assets/api3.png';
 
 const SkillsAndProjectsComponent = () => {
   return (
@@ -24,14 +27,16 @@ const SkillsAndProjectsComponent = () => {
      */}
       <div className="projects-container">
         <ProjectComponent
-          classSection="prtf"
-          photoSrc={img_front}
-          images={[prtf1, prtf2, prtf3]}
+          classSection="apib"
+          images={[api1, api2, api3]}
         />
         <ProjectComponent
           classSection="filmax"
-          photoSrc={img_front}
           images={[filmax1, filmax2]}
+        />
+        <ProjectComponent
+          classSection="prtf"
+          images={[prtf1, prtf2, prtf3]}
         />
       </div>
     </>

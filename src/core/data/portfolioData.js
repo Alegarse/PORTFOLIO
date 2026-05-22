@@ -75,11 +75,16 @@ const data = {
     en: 'Personal Web Portfolio',
   },
   project_prtf_desc: {
-    es: 'Este portfolio web personal desarrollado en React.js con gestión de estado global a través de redux, rutas dinámicas e interactividad.\nIncluye sección de habilidades, presentación profesional y enlace a repositorios, además de una sección aprendizaje',
-    en: 'This personal web portfolio developed in React.js with global state management through redux, dynamic paths and interactivity.\nIncludes skills section, professional presentation and link to repositories; also include a learning section',
+    es: 'Este portfolio web personal desarrollado en React.js con gestión de estado global a través de redux, rutas dinámicas e interactividad.\nIncluye sección de habilidades, presentación profesional y enlace a repositorios, además de una sección aprendizaje y un chatBot personal',
+    en: 'This personal web portfolio developed in React.js with global state management through redux, dynamic paths and interactivity.\nIncludes skills section, professional presentation and link to repositories; also include a learning section and personal chatbot',
   },
   project_prtf_tags:
     'HTML · CSS · JavaScript · React.JS · Redux · Vite · Responsive Design',
+  project_prtf_link: 'https://portfolioags.arenalsoft.es/',
+  project_prtf_link_desc: {
+    es: 'Abrir en nueva pestaña',
+    en: 'Open into new tab',
+  },
   project_filmax_title: {
     es: 'Filmax',
     en: 'Filmax',
@@ -90,6 +95,25 @@ const data = {
   },
   project_filmax_tags:
     'HTML · CSS · JavaScript · React.TS · Zustand · TanStack Query · Vite',
+  project_filmax_link: 'https://filmax.arenalsoft.es/',
+  project_filmax_link_desc: {
+    es: 'Abrir en nueva pestaña',
+    en: 'Open into new tab',
+  },
+  project_apib_title: {
+    es: 'Api REST',
+    en: 'Restfull API',
+  },
+  project_apib_desc: {
+    es: 'API REST para gestionar un catálogo de películas con usuarios autenticados. Permite registrarse, iniciar sesión, explorar películas, dejar comentarios y guardar favoritos.',
+    en: 'REST API to manage a movie catalog with user authentication. Supports sign up, log in, browsing movies, leaving comments and saving favourites.',
+  },
+  project_apib_tags: 'NodeJS · Express · MongoDB · Mongoose · JWT · bcrypt',
+  project_apib_link: 'https://github.com/Alegarse/APIRest_BASIC',
+  project_apib_link_desc: {
+    es: 'Abrir repositorio en nueva pestaña',
+    en: 'Open repo into new tab',
+  },
 };
 
 export default data;

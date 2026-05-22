@@ -4,7 +4,7 @@ import data from '../../../core/data/portfolioData';
 import ImageCarousel from '../../ImageCarousel/ImageCarousel';
 
 const ProjectComponent = (props) => {
-  const { classSection, photoSrc, images } = props;
+  const { classSection, images, empty } = props;
 
   const [content, setContent] = useState({
     title: '',
@@ -19,12 +19,14 @@ const ProjectComponent = (props) => {
       title: data[`project_${classSection}_title`][language],
       desc: data[`project_${classSection}_desc`][language],
       tags: data[`project_${classSection}_tags`],
+      link: data[`project_${classSection}_link`],
+      link_desc: data[`project_${classSection}_link_desc`][language],
     });
   };
 
   useEffect(() => {
     setContentSection();
-  }, []);
+  }, [language]);
 
   return (
     <section className="skills-box container">
@@ -35,6 +37,9 @@ const ProjectComponent = (props) => {
       <div className="skills-text">
         <h3 className="skills-title">{content.title}</h3>
         <span className="skills-desc">{content.desc}</span>
+        <a className="skills-link" href={content.link} target="_blank">
+          {content.link_desc}
+        </a>
         <span className="skills-tags">{content.tags}</span>
       </div>
     </section>
