@@ -1,17 +1,46 @@
 import data from '../../../core/data/portfolioData';
 import SkillComponent from './SkillComponent';
-import img_front from '../../../assets/skills_front.png'
-import img_back from '../../../assets/skills_back.png'
-import img_bbdd from '../../../assets/skills_bbdd.png'
+import img_front from '../../../assets/skills_front.png';
+import img_back from '../../../assets/skills_back.png';
+import img_bbdd from '../../../assets/skills_bbdd.png';
+import ProjectComponent from './ProjectComponent';
+
+/** Iamges import */
+import prtf1 from '../../../assets/prtf1.png';
+import prtf2 from '../../../assets/prtf2.png';
+import prtf3 from '../../../assets/prtf3.png';
+import filmax1 from '../../../assets/filmax1.png';
+import filmax2 from '../../../assets/filmax2.png';
+import api1 from '../../../assets/api1.png';
+import api2 from '../../../assets/api2.png';
+import api3 from '../../../assets/api3.png';
 
 const SkillsAndProjectsComponent = () => {
   return (
-    <div className='skills-container'>
-      <SkillComponent classSection="front" photoSrc={img_front}/>
-      <SkillComponent classSection="back" photoSrc={img_back}/>
-      <SkillComponent classSection="bbdd" photoSrc={img_bbdd}/>
-    </div>
+    <>
+      {/*
+      <div className="skills-container">
+        <SkillComponent classSection="front" photoSrc={img_front} />
+        <SkillComponent classSection="back" photoSrc={img_back} />
+        <SkillComponent classSection="bbdd" photoSrc={img_bbdd} />
+      </div>
+     */}
+      <div className="projects-container">
+        <ProjectComponent
+          classSection="apib"
+          images={[api1, api2, api3]}
+        />
+        <ProjectComponent
+          classSection="filmax"
+          images={[filmax1, filmax2]}
+        />
+        <ProjectComponent
+          classSection="prtf"
+          images={[prtf1, prtf2, prtf3]}
+        />
+      </div>
+    </>
   );
-}
+};
 
-export default SkillsAndProjectsComponent
+export default SkillsAndProjectsComponent;
