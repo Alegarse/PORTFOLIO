@@ -109,7 +109,7 @@ const data = {
     en: 'REST API to manage a movie catalog with user authentication. Supports sign up, log in, browsing movies, leaving comments and saving favourites.',
   },
   project_apib_tags: 'NodeJS · Express · MongoDB · Mongoose · JWT · bcrypt',
-  project_apib_link: 'https://github.com/Alegarse/APIRest_BASIC',
+  project_apib_link: 'https://gist.github.com/Alegarse/312ccd79f59c3d384924276439613445',
   project_apib_link_desc: {
     es: 'Abrir repositorio en nueva pestaña',
     en: 'Open repo into new tab',
