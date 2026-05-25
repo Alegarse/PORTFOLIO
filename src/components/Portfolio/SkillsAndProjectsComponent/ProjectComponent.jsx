@@ -37,9 +37,11 @@ const ProjectComponent = (props) => {
       <div className="skills-text">
         <h3 className="skills-title">{content.title}</h3>
         <span className="skills-desc">{content.desc}</span>
-        <a className="skills-link" href={content.link} target="_blank">
-          {content.link_desc}
-        </a>
+        {classSection !== 'prtf' && (
+          <a className="skills-link" href={content.link} target="_blank">
+            {content.link_desc}
+          </a>
+        )}
         <span className="skills-tags">{content.tags}</span>
       </div>
     </section>
