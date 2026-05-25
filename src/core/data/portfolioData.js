@@ -17,6 +17,10 @@ const data = {
     en: 'About me',
   },
   nav_skills: {
+    es: 'Habilidades',
+    en: 'Skills',
+  },
+  nav_proyects: {
     es: 'Proyectos',
     en: 'Projects',
   },
@@ -29,7 +33,7 @@ const data = {
     en: 'I am a programmer who works as a trainer specialized in software development. Before that, I worked as a team leader and Full Stack software analyst.\nI am passionate about everything related to development and project creation, as well as team management using Agile methodologies.\nIn my work, I combine methodologies focused on learning from scratch with advanced training and programming, so that my students acquire a distinctive edge.\nI am particularly interested in learning new programming languages and development methodologies.',
   },
   skills_front_tags:
-    'HTML · CSS · JavaScript · React · Redux · Vite · Responsive Design',
+    'HTML · CSS · JavaScript · React · Redux - Zustand - TanStack Query · Vite · Responsive Design',
   skills_back_title: {
     es: 'backEnd',
     en: 'backEnd',
@@ -49,7 +53,7 @@ const data = {
     en: 'I work with both relational and non-relational databases, designing efficient data models tailored to the specific needs of each application.\nI have experience using MongoDB for flexible data structures and MySQL for more structured data.\nI integrate external services such as Cloudinary for image and file management, optimizing storage and application performance in production environments.\nRegarding tools, I use Git and GitHub as the foundation of my workflow, along with Linux servers, allowing me to maintain stable and well-controlled projects throughout their lifecycle.',
   },
   skills_bbdd_tags:
-    'MongoDB · MySQL · Cloudinary · Git · GitHub · CI/CD · Linux Server',
+    'MongoDB · MySQL - PostgreSQL · Cloudinary · Git · GitHub · CI/CD · Linux Server',
   nav_contact: {
     es: 'Contacto',
     en: 'Contact',
@@ -109,7 +113,8 @@ const data = {
     en: 'REST API to manage a movie catalog with user authentication. Supports sign up, log in, browsing movies, leaving comments and saving favourites.',
   },
   project_apib_tags: 'NodeJS · Express · MongoDB · Mongoose · JWT · bcrypt',
-  project_apib_link: 'https://gist.github.com/Alegarse/312ccd79f59c3d384924276439613445',
+  project_apib_link:
+    'https://gist.github.com/Alegarse/312ccd79f59c3d384924276439613445',
   project_apib_link_desc: {
     es: 'Abrir repositorio en nueva pestaña',
     en: 'Open repo into new tab',

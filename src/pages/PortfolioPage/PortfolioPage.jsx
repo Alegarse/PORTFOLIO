@@ -4,6 +4,7 @@ import MainComponent from "../../components/Portfolio/MainComponent/MainComponen
 import { setActivityAction } from "../../components/HeaderComponent/HeaderComponentActions";
 import SkillsAndProjectsComponent from "../../components/Portfolio/SkillsAndProjectsComponent/SkillsAndProjectsComponent";
 import ContactComponent from "../../components/Portfolio/ContactComponent/ContactComponent";
+import { setPortfolioLocation } from "./PortfolioPageActions";
 
 const PortfolioPage = () => {
   const dispatch = useDispatch();
@@ -17,6 +18,7 @@ const PortfolioPage = () => {
     <div className="portfolio-container">
       {portfolioLocation === "main" && <MainComponent />}
       {portfolioLocation === "skills" && <SkillsAndProjectsComponent />}
+      {portfolioLocation === "projects" && <SkillsAndProjectsComponent />}
       {portfolioLocation === "contact" && <ContactComponent />}
     </div>
   );

@@ -14,31 +14,30 @@ import filmax2 from '../../../assets/filmax2.png';
 import api1 from '../../../assets/api1.png';
 import api2 from '../../../assets/api2.png';
 import api3 from '../../../assets/api3.png';
+import { useSelector } from 'react-redux';
 
 const SkillsAndProjectsComponent = () => {
+  const { portfolioLocation } = useSelector(
+    (state) => state.portfolioPageReducer
+  );
   return (
     <>
-      {/*
-      <div className="skills-container">
-        <SkillComponent classSection="front" photoSrc={img_front} />
-        <SkillComponent classSection="back" photoSrc={img_back} />
-        <SkillComponent classSection="bbdd" photoSrc={img_bbdd} />
-      </div>
-     */}
-      <div className="projects-container">
-        <ProjectComponent
-          classSection="apib"
-          images={[api1, api2, api3]}
-        />
-        <ProjectComponent
-          classSection="filmax"
-          images={[filmax1, filmax2]}
-        />
-        <ProjectComponent
-          classSection="prtf"
-          images={[prtf1, prtf2, prtf3]}
-        />
-      </div>
+      {portfolioLocation === 'skills' ? (
+        <div className="skills-container">
+          <SkillComponent classSection="front" photoSrc={img_front} />
+          <SkillComponent classSection="back" photoSrc={img_back} />
+          <SkillComponent classSection="bbdd" photoSrc={img_bbdd} />
+        </div>
+      ) : (
+        <div className="projects-container">
+          <ProjectComponent classSection="apib" images={[api1, api2, api3]} />
+          <ProjectComponent classSection="filmax" images={[filmax1, filmax2]} />
+          <ProjectComponent
+            classSection="prtf"
+            images={[prtf1, prtf2, prtf3]}
+          />
+        </div>
+      )}
     </>
   );
 };

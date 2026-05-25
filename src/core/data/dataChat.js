@@ -10,9 +10,8 @@ Elige una opción:
             4) Inquietudes
             5) Hobbies
             6) Contacto
-            7) Ir a desafíos
             
-Escribe un número (1-7) o una pregunta....`,
+Escribe un número (1-6) o una pregunta....`,
     next: {
       1: 'about',
       2: 'stds',
@@ -20,7 +19,6 @@ Escribe un número (1-7) o una pregunta....`,
       4: 'mind',
       5: 'hobbys',
       6: 'contact',
-      7: 'challenges'
     },
   },
 
@@ -66,9 +64,8 @@ Choose an option:
             4) Interests
             5) Hobbies
             6) Contact
-            7) Go to challenges
 
-Type a number (1–7) or ask a question...`,
+Type a number (1–6) or ask a question...`,
     next: {
       1: 'about',
       2: 'stds',
@@ -76,7 +73,6 @@ Type a number (1–7) or ask a question...`,
       4: 'mind',
       5: 'hobbys',
       6: 'contact',
-      7: 'challenges',
     },
   },
 

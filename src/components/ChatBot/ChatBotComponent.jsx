@@ -17,20 +17,12 @@ const ChatBotComponent = () => {
 
   const { language } = useSelector((state) => state.menuComponentReducer);
 
-  const goToChallenges = () => {
-    closeChatBot();
-    navigate("/challenges");
-    return
-  };
-
   const getBotReply = (currentState, userMessage) => {
     const next = speech.start.next[userMessage];
     let text = msgUser.toLowerCase();
 
     if (next && next === "contact") {
       text = "contacto";
-    } else if (next && next === "challenges"){
-      text = "challenge";
     } else if (next) {
       setStartedChat(false);
       setMsgBot(`${speech[next].text}\n\n${speech.exit.text}`);
@@ -142,11 +134,6 @@ const ChatBotComponent = () => {
           <div>{speech.exit.text}</div>
         </>,
       );
-      return;
-    }
-
-    if (text.includes("challenge") || text.includes("desafio")) {
-      goToChallenges();
       return;
     }
 

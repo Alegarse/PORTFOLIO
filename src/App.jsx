@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import MainLayout from './components/MainLayout/MainLayout';
 import PortfolioPage from './pages/PortfolioPage/PortfolioPage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
-import ChallengesPage from './pages/ChallengesPage/ChallengesPage';
 import detectLanguage from './core/util/detectLanguage';
 import { useDispatch } from 'react-redux';
 import { setLanguageAction } from './components/MenuComponent/MenuComponentActions';
@@ -26,7 +25,6 @@ function App() {
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<PortfolioPage />} />
-          <Route path="/challenges" element={<ChallengesPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>

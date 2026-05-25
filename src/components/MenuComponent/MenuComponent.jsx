@@ -27,13 +27,13 @@ const MenuComponent = () => {
       <Link className="link-button" to="/" onClick={() => onClickLinkHandler("skills")}>
       {data.nav_skills[language]}
       </Link>
+      <Link className="link-button" to="/" onClick={() => onClickLinkHandler("projects")}>
+      {data.nav_proyects[language]}
+      </Link>
       <Link className="link-button" to="/" onClick={() => onClickLinkHandler("contact")}>
       {data.nav_contact[language]}
       </Link>
       <span className="separator-navbar">|</span>
-      <Link className="link-button" to="/challenges" onClick={() => onClickLinkHandler("challenges")}>
-        {data.nav_chgs[language]}
-      </Link>
       <div>
         <select
           className="lang-select"
