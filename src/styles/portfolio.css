@@ -236,3 +236,10 @@
     margin: 0 2.5rem;
   }
 }
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
