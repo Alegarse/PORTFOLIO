@@ -5,8 +5,8 @@ const data = {
     en: 'A little about me',
   },
   info_desc: {
-    es: 'Soy un programador que trabaja de formador especializado de desarrollo. Antes de eso, trabajé como jefe de equipo y analista programador Full Stack.\nMe fascina todo lo relacionado con el desarrollo y creación de proyectos y la gestión de equipos por metodologías Agile.\nEn mi trabajo combino metodologías orientadas al aprendizaje desde 0, como formación y programación avanzada para que mis alumnos adquieran ese punto diferenciador.\nEstoy particularmente interesado en el aprendizaje de nuevos lenguajes y metodologías de desarrollo.',
-    en: 'I am a programmer who works as a trainer specialized in software development. Before that, I worked as a team leader and Full Stack software analyst.\nI am passionate about everything related to development and project creation, as well as team management using Agile methodologies.\nIn my work, I combine methodologies focused on learning from scratch with advanced training and programming, so that my students acquire a distinctive edge.\nI am particularly interested in learning new programming languages and development methodologies.',
+    es: 'Soy desarrollador full stack y actualmente trabajo como formador técnico especializado en desarrollo. Antes de esto, trabajé tres años y medio como desarrollador Full Stack manteniendo un CRM en el sector automoción.\nMe apasiona el desarrollo de aplicaciones, la creación de proyectos de principio a fin y el trabajo en equipo bajo metodologías ágiles.\nEn mi día a día combino enseñar a programar desde cero con seguir aprendiendo yo: actualmente profundizo en TypeScript, PostgreSQL y ciberseguridad, esta última a través de un bootcamp en el que acabo de empezar.\nMe interesa especialmente entender cómo se diseñan aplicaciones robustas, mantenibles y seguras.',
+    en: "I'm a full stack developer currently working as a technical instructor specialized in software development. Before this, I spent three and a half years as a Full Stack Developer maintaining a CRM in the automotive sector.\nI'm passionate about building applications end-to-end, project creation and teamwork under agile methodologies.\nMy day-to-day combines teaching others to code from scratch with continuing to learn myself: I'm currently going deeper into TypeScript, PostgreSQL and cybersecurity — the latter through a bootcamp I'm just starting.\nI'm especially interested in understanding how to design robust, maintainable and secure applications.",
   },
   more_info: {
     es: 'Más información técnica',
@@ -29,8 +29,8 @@ const data = {
     en: 'frontEnd',
   },
   skills_front_desc: {
-    es: 'Me especializo en el desarrollo de interfaces web modernas, priorizando la claridad visual, la usabilidad y el rendimiento.\n Trabajo con arquitecturas basadas en componentes que facilitan la escalabilidad y el mantenimiento del código a largo plazo.\nTengo experiencia creando aplicaciones dinámicas con JavaScript moderno y frameworks como React, gestionando el estado de la aplicación de forma eficiente mediante Redux y aplicando buenas prácticas en la organización del proyecto.\nPresto especial atención al diseño responsive y a la experiencia de usuario, asegurando que las interfaces funcionen correctamente en distintos dispositivos y tamaños de pantalla, manteniendo siempre una interacción fluida y coherente.',
-    en: 'I am a programmer who works as a trainer specialized in software development. Before that, I worked as a team leader and Full Stack software analyst.\nI am passionate about everything related to development and project creation, as well as team management using Agile methodologies.\nIn my work, I combine methodologies focused on learning from scratch with advanced training and programming, so that my students acquire a distinctive edge.\nI am particularly interested in learning new programming languages and development methodologies.',
+    es: 'Construyo interfaces web modernas con React, organizando el código en componentes reutilizables y cuidando que la aplicación funcione bien tanto en escritorio como en móvil.\nGestiono el estado de la aplicación con Redux, Zustand o TanStack Query según las necesidades del proyecto: estado global, server state o flujos más simples.\nMe importa que el resultado se sienta rápido y predecible para el usuario, y que el código sea cómodo de mantener para el siguiente que lo abra.',
+    en: 'I build modern web interfaces with React, organizing code into reusable components and making sure the app works well on both desktop and mobile.\nI manage application state with Redux, Zustand or TanStack Query depending on the needs of each project: global state, server state, or simpler flows.\nI care about the result feeling fast and predictable for the user, and the code being comfortable to maintain for whoever opens it next.',
   },
   skills_front_tags:
     'HTML · CSS · JavaScript · React · Redux - Zustand - TanStack Query · Vite · Responsive Design',
@@ -39,8 +39,8 @@ const data = {
     en: 'backEnd',
   },
   skills_back_desc: {
-    es: 'Desarrollo la lógica de servidor de aplicaciones web mediante APIs REST bien estructuradas, enfocadas en la seguridad, la claridad y la escalabilidad.\n Me siento cómodo trabajando con Node.js y Express para construir servicios robustos que conectan el frontend con la base de datos.\nImplemento sistemas de autenticación y autorización utilizando JWT y técnicas de cifrado como bcrypt, gestionando correctamente usuarios, permisos y flujos de sesión de forma segura.\nAdemás, organizo el backend siguiendo patrones como MVC, separando rutas, controladores y lógica de negocio, lo que permite un código más limpio, reutilizable y fácil de mantener.',
-    en: 'I develop the server-side logic for web applications through well-structured REST APIs, with a strong focus on security, clarity, and scalability.\nI am comfortable working with Node.js and Express to build robust services that connect the frontend with the database.\nI implement authentication and authorization systems using JWT and encryption techniques such as bcrypt, properly managing users, permissions, and secure session flows.\nIn addition, I organize the backend following patterns like MVC, separating routes, controllers, and business logic, which results in cleaner, more reusable, and easier-to-maintain code..',
+    es: 'Construyo la lógica de servidor con Node.js y Express, diseñando APIs REST claras y bien organizadas.\nImplemento autenticación y autorización con JWT y bcrypt, gestionando usuarios, permisos y sesiones de forma segura.\nEstructuro el backend siguiendo el patrón MVC para separar rutas, controladores y lógica de negocio, lo que mantiene el código limpio y fácil de extender.\nTambién he trabajado con PHP en el mantenimiento de sistemas en producción.',
+    en: "I build server-side logic with Node.js and Express, designing clean and well-organized REST APIs.\nI implement authentication and authorization with JWT and bcrypt, handling users, permissions and sessions securely.\nI structure the backend following the MVC pattern, separating routes, controllers and business logic, which keeps the code clean and easy to extend.\nI've also worked with PHP maintaining production systems.",
   },
   skills_back_tags:
     'Node.js · Express · JWT · Bcrypt · PHP · REST APIs · MVC Architecture',
@@ -49,8 +49,8 @@ const data = {
     en: 'Databases & Environment',
   },
   skills_bbdd_desc: {
-    es: 'Trabajo con bases de datos tanto relacionales como no relacionales, diseñando modelos de datos eficientes y adaptados a las necesidades de cada aplicación.\n Tengo experiencia utilizando MongoDB para estructuras flexibles y MySQL para datos más estructurados.\nIntegro servicios externos como Cloudinary para la gestión de imágenes y archivos, optimizando el almacenamiento y el rendimiento de las aplicaciones en producción.\nEn cuanto a herramientas, utilizo Git y GitHub como base de mi flujo de trabajo, junto con servidores Linux, lo que me permite mantener proyectos estables y bien controlados a lo largo de su ciclo de vida.',
-    en: 'I work with both relational and non-relational databases, designing efficient data models tailored to the specific needs of each application.\nI have experience using MongoDB for flexible data structures and MySQL for more structured data.\nI integrate external services such as Cloudinary for image and file management, optimizing storage and application performance in production environments.\nRegarding tools, I use Git and GitHub as the foundation of my workflow, along with Linux servers, allowing me to maintain stable and well-controlled projects throughout their lifecycle.',
+    es: 'Trabajo con bases de datos relacionales y no relacionales, diseñando el modelo de datos según lo que pida cada aplicación.\nTengo experiencia con MongoDB para estructuras flexibles y con MySQL para datos más estructurados; actualmente también me estoy familiarizando con PostgreSQL.\nIntegro servicios externos como Cloudinary para gestión de imágenes y archivos en producción.\nComo base del flujo de trabajo, uso Git y GitHub, junto con servidores Linux para despliegues, lo que me permite mantener proyectos estables a lo largo de su ciclo de vida.',
+    en: "I work with both relational and non-relational databases, designing the data model based on what each application requires.\nI have experience with MongoDB for flexible structures and MySQL for more structured data; I'm also currently getting familiar with PostgreSQL.\nI integrate external services such as Cloudinary for image and file management in production.\nAs the base of my workflow, I use Git and GitHub, along with Linux servers for deployments, which lets me keep projects stable throughout their lifecycle.",
   },
   skills_bbdd_tags:
     'MongoDB · MySQL - PostgreSQL · Cloudinary · Git · GitHub · CI/CD · Linux Server',
@@ -67,9 +67,9 @@ const data = {
     en: 'Shall we talk?',
   },
   contact_description: {
-    es: 'Siempre abierto a nuevas oportunidades, retos interesantes y a colaborar con equipos donde sumar y aprender vaya de la mano.',
-    en: 'Always open to new opportunities, interesting challenges, and collaborating with teams where contributing and learning go hand in hand.',
-  },
+  es: 'Hablemos de proyectos, retos técnicos o cualquier cosa interesante que tenga que ver con código y construir cosas.',
+  en: "Let's talk about projects, technical challenges, or anything interesting that involves code and building things.",
+},
   contact_location: {
     es: 'Ubicación: Benalmádena, Málaga, Spain',
     en: 'Location: Benalmádena, Málaga, Spain',
@@ -94,8 +94,8 @@ const data = {
     en: 'Filmax',
   },
   project_filmax_desc: {
-    es: 'Página Filmax de contenido de información de películas, con diferentes listados según actualidad, puntuación, etc... con posibilidad de buscar por nombre.\n Realizada en ReactTS con Zustand y TanStackQuery para manejos de estado del lado de cliente y servidor.',
-    en: 'Personal web portfolio developed in React.js with global state management through redux, dynamic paths and interactivity.\nIncludes skills section, professional presentation and link to repositories; also include a learning section',
+    es: 'Filmax es una página de información de películas con distintos listados (actualidad, puntuación, etc.) y buscador por nombre.\nDesarrollada con React y TypeScript, usa Zustand para el estado del cliente y TanStack Query para la gestión del estado del servidor y caché de peticiones.',
+    en: 'Filmax is a movie information website with different listings (trending, rated, etc.) and search by name.\nBuilt with React and TypeScript, it uses Zustand for client state and TanStack Query for server state management and request caching.',
   },
   project_filmax_tags:
     'HTML · CSS · JavaScript · React.TS · Zustand · TanStack Query · Vite',
