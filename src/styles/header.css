@@ -136,6 +136,13 @@ select:focus-visible {
   .logo {
     display: none;
   }
+  .header-menu {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .separator-navbar {
+    display: none;
+  }
 }
 
 @media (max-width: 64.6875rem) {

@@ -26,22 +26,25 @@ Escribe un número (1-6) o una pregunta....`,
     text: 'Escribe 0 para volver al menú.',
   },
   about: {
-    text: `Soy un desarrollador full stack en constante evolución, apasionado por la tecnología y la creación de soluciones digitales.
-Actualmente estoy ampliando formación en diversas tecnologías como Python, JavaScript, React, Node.js, MongoDB, SQL y PHP, con el objetivo de construir aplicaciones web eficientes, seguras y escalables`,
+    text: `Soy desarrollador full stack y formador técnico en Málaga.
+Mi día a día gira en torno a JavaScript, React, Node.js, MongoDB y MySQL, tanto construyendo aplicaciones web como enseñando a otros a programar.
+Actualmente profundizo en TypeScript y PostgreSQL, y compagino mi trabajo con un bootcamp de ciberseguridad. También aprendo despliegue en servidores Ubuntu y gestión de dominios para cubrir todo el ciclo de un proyecto.`,
   },
   stds: {
-    text: `BootCamp Full Stack,
-Grado Superior Desarrollador aplicaciones multiplataforma,
-Cursos relacionados programación`,
+    text: `Bootcamp Full Stack (Codespace Academy),
+Bootcamp de Ciberseguridad (en curso),
+Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM),
+Formación continua en programación, metodologías ágiles e IA.`,
   },
   exp: {
-    text: `Docente de programación Full Stack,
-Jefe de equipo para desarrollo Full Stack,
-Desarrollo de aplicaciónes Android Nativo`,
+    text: `Formador técnico de Desarrollo Full Stack (actualidad),
+Desarrollador Full Stack en CRM del sector automoción (3 años y medio),
+Desarrollo Android nativo con APIs REST (freelance).`,
   },
   mind: {
-    text: `Mi enfoque se centra en el aprendizaje continuo y la búsqueda de la optimización, con especial interés en el desarrollo backend, la integración de servicios y la automatización de procesos.
-Además, estoy aprendiendo a desplegar proyectos en servidores propios con Ubuntu y gestionando dominios, lo que me permite ofrecer soluciones completas desde la programación hasta la infraestructura`,
+    text: `Me atrae especialmente el lado backend del desarrollo: diseñar APIs claras, integrar servicios y automatizar lo que se puede automatizar.
+Me interesa entender cómo escala una aplicación cuando crece de verdad, y por qué unas decisiones técnicas envejecen bien y otras no.
+La ciberseguridad y el rendimiento son los dos terrenos donde quiero seguir profundizando los próximos años.`,
   },
   hobbys: {
     text: `Senderismo, cine, lectura, viajar, playa, un poco de todo.`,
@@ -81,25 +84,28 @@ Type a number (1–6) or ask a question...`,
   },
 
   about: {
-    text: `I am a full stack developer in constant evolution, passionate about technology and creating digital solutions.
-I am currently expanding my training in various technologies such as Python, JavaScript, React, Node.js, MongoDB, SQL, and PHP, with the goal of building efficient, secure, and scalable web applications.`,
+    text: `I'm a full stack developer and tech educator based in Málaga, Spain.
+My day-to-day revolves around JavaScript, React, Node.js, MongoDB and MySQL — both building web applications and teaching others to code.
+I'm currently going deeper into TypeScript and PostgreSQL, and combining my work with a cybersecurity bootcamp. I'm also learning to deploy projects on my own Ubuntu servers and manage domains, so I can cover the full cycle of a project.`,
   },
 
   stds: {
-    text: `Full Stack Bootcamp,
-Higher Degree in Multiplatform Application Development,
-Programming-related courses.`,
+    text: `Full Stack Bootcamp (Codespace Academy),
+Cybersecurity Bootcamp (in progress),
+Advanced Vocational Diploma in Multi-platform Application Development (DAM),
+Ongoing training in programming, agile methodologies and AI.`,
   },
 
   exp: {
-    text: `Full Stack Programming Instructor,
-Team Lead for Full Stack Development,
-Native Android Application Development.`,
+    text: `Full Stack Development Instructor (current),
+Full Stack Developer on a CRM in the automotive sector (3.5 years),
+Native Android development with REST APIs (freelance).`,
   },
 
   mind: {
-    text: `My approach focuses on continuous learning and the pursuit of optimization, with a strong interest in backend development, service integration, and process automation.
-In addition, I am learning how to deploy projects on my own Ubuntu servers and manage domains, allowing me to offer complete solutions from development to infrastructure.`,
+    text: `I'm especially drawn to the backend side of development: designing clean APIs, integrating services and automating whatever can be automated.
+I want to understand how an application really scales when it grows, and why some technical decisions age well while others don't.
+Cybersecurity and performance are the two areas where I want to keep going deeper over the next few years.`,
   },
 
   hobbys: {
@@ -115,7 +121,23 @@ In addition, I am learning how to deploy projects on my own Ubuntu servers and m
 
 export const chatBot_data = {
   icon_title: {
-    es: "Haz click aquí para recibir más información",
-    en: "Click here to obtain more info"
-  }
-}
+    es: 'Haz click aquí para recibir más información',
+    en: 'Click here to obtain more info',
+  },
+  ppal_title: {
+    es: 'Asistente Portfolio',
+    en: 'Portfolio Help',
+  },
+  scnd_title: {
+    es: 'Respuestas rápidas',
+    en: 'Quick answers',
+  },
+  send_btn: {
+    es: 'Enviar',
+    en: 'Send',
+  },
+  plhldr_input: {
+    es: 'Escribe un número (1-6) o una pregunta...',
+    en: 'Write a number (1-6) or a question...',
+  },
+};

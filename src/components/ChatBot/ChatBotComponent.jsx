@@ -212,8 +212,8 @@ const ChatBotComponent = () => {
         <div className="cw-panel">
           <div className="cw-header">
             <div className="cw-title">
-              <strong>Asistente Portfolio</strong>
-              <span>Respuestas rápidas</span>
+              <strong>{chatBot_data.ppal_title[language]}</strong>
+              <span>{chatBot_data.scnd_title[language]}</span>
             </div>
             <button
               className="cw-close"
@@ -241,12 +241,12 @@ const ChatBotComponent = () => {
               id="cw-input"
               className="cw-input"
               type="text"
-              placeholder="Escribe un número (1-7) o una pregunta..."
+              placeholder={chatBot_data.plhldr_input[language]}
               onChange={(e) => handleUserMessage(e.target.value)}
               onKeyDown={(e) => handleKeyDown(e.key)}
             />
             <button className="cw-send" type="button" onClick={sendMessage}>
-              Enviar
+              {chatBot_data.send_btn[language]}
             </button>
           </div>
         </div>

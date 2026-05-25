@@ -33,7 +33,6 @@ const MenuComponent = () => {
       <Link className="link-button" to="/" onClick={() => onClickLinkHandler("contact")}>
       {data.nav_contact[language]}
       </Link>
-      <span className="separator-navbar">|</span>
       <div>
         <select
           className="lang-select"

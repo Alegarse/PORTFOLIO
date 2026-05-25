@@ -13,7 +13,7 @@ const data = {
     en: 'More technical information',
   },
   nav_me: {
-    es: 'Acerca de mí',
+    es: 'Sobre mí',
     en: 'About me',
   },
   nav_skills: {
