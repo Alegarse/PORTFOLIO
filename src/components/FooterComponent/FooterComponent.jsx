@@ -17,7 +17,7 @@ const FooterComponent = () => {
             target="_blank"
             title={mainData.send_mail[language]}
           >
-            agscm2@gmail.com
+            Alejandro García Serrano
           </a>
           <a
             href="https://github.com/Alegarse"

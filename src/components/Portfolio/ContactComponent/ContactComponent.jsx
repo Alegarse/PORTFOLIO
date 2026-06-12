@@ -14,16 +14,16 @@ const ContactComponent = () => {
 
       <div className="contact-text">
         <h1 className="contact-title">{data.contact_title[language]}</h1>
-        <h3 className="contact-description">
+        <p className="contact-description">
           {data.contact_description[language]}
-        </h3>
+        </p>
         <a
           href="mailto:agscm2@gmail.com"
           className="contact-info-link"
           target="_blank"
           title={mainData.send_mail[language]}
         >
-          📬 agscm2@gmail.com
+          agscm2@gmail.com
         </a>
         <a
           href="https://github.com/Alegarse"
@@ -31,18 +31,23 @@ const ContactComponent = () => {
           target="_blank"
           title={mainData.go_github[language]}
         >
-          ⚙️ Github
+          Github
         </a>
         <a
           href="https://www.linkedin.com/in/alegarse/"
           className="contact-info-link"
           target="_blank"
-          title={mainData.go_github[language]}
+          title={mainData.go_linkedin[language]}
         >
-          🔗 LinkedIn
+          LinkedIn
         </a>
-        <a href="tel:+34644321368" className="contact-info-link">
-          📞 +34 644321 368
+        <a
+          href="https://wa.me/34644321368"
+          className="contact-info-link"
+          title={mainData.go_phone[language]}
+          target="_blank"
+        >
+          +34 644321 368
         </a>
       </div>
     </section>

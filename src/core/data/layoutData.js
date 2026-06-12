@@ -15,6 +15,10 @@ export const mainData = {
         es: "Ir al perfil de LinkedIn del autor",
         en: "Got to author's linkedin profile"
     },
+    go_phone: {
+        es: "Escribir por Whatsapp",
+        en: "Whatsapp message to author's phone"
+    },
     text_404: {
         es: "Ups! Parece que al que creaba las páginas de este sitio se le ha agotado la batería y ahora no encuentras lo que estabas buscando...",
         en: "Ups! It looks like the person who was creating the pages for this site ran out of battery, and now you can’t find what you were looking for....",
