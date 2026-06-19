@@ -20,9 +20,13 @@ const ProjectComponent = (props) => {
       desc: data[`project_${classSection}_desc`][language],
       tags: data[`project_${classSection}_tags`],
       link: data[`project_${classSection}_link`],
+      link2: data[`project_${classSection}_link_gh`] ?? '',
       link_desc: data[`project_${classSection}_link_desc`][language],
+      link_desc2: data[`project_${classSection}_link_desc_gh`]?.[language] ?? '',
     });
   };
+
+  console.log(content);
 
   useEffect(() => {
     setContentSection();
@@ -38,9 +42,26 @@ const ProjectComponent = (props) => {
         <h3 className="skills-title">{content.title}</h3>
         <span className="skills-desc">{content.desc}</span>
         {classSection !== 'prtf' && (
-          <a className="skills-link" href={content.link} target="_blank" rel="noopener noreferrer">
-            {content.link_desc}
-          </a>
+          <>
+            <a
+              className="skills-link"
+              href={content.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {content.link_desc}
+            </a>
+            {classSection === 'filmax' && (
+              <a
+                className="skills-link"
+                href={content.link2}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {content.link_desc2}
+              </a>
+            )}
+          </>
         )}
         <span className="skills-tags">{content.tags}</span>
       </div>

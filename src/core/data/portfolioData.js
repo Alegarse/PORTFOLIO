@@ -100,9 +100,14 @@ const data = {
   project_filmax_tags:
     'HTML · CSS · JavaScript · React.TS · Zustand · TanStack Query · Vite',
   project_filmax_link: 'https://filmax.arenalsoft.es/',
+  project_filmax_link_gh: 'https://github.com/Alegarse/Filmax',
   project_filmax_link_desc: {
     es: 'Abrir en nueva pestaña',
     en: 'Open into new tab',
+  },
+  project_filmax_link_desc_gh: {
+    es: 'Abrir repositorio',
+    en: 'Open repository',
   },
   project_apib_title: {
     es: 'Api REST',
