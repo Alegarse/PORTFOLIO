@@ -22,7 +22,8 @@ const ProjectComponent = (props) => {
       link: data[`project_${classSection}_link`],
       link2: data[`project_${classSection}_link_gh`] ?? '',
       link_desc: data[`project_${classSection}_link_desc`][language],
-      link_desc2: data[`project_${classSection}_link_desc_gh`]?.[language] ?? '',
+      link_desc2:
+        data[`project_${classSection}_link_desc_gh`]?.[language] ?? '',
     });
   };
 
@@ -41,8 +42,8 @@ const ProjectComponent = (props) => {
       <div className="skills-text">
         <h3 className="skills-title">{content.title}</h3>
         <span className="skills-desc">{content.desc}</span>
-        {classSection !== 'prtf' && (
-          <>
+        <>
+          {classSection !== 'prtf' && (
             <a
               className="skills-link"
               href={content.link}
@@ -51,18 +52,20 @@ const ProjectComponent = (props) => {
             >
               {content.link_desc}
             </a>
-            {classSection === 'filmax' && (
-              <a
-                className="skills-link"
-                href={content.link2}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {content.link_desc2}
-              </a>
-            )}
-          </>
-        )}
+          )}
+
+          {(classSection === 'filmax' || classSection === 'prtf') && (
+            <a
+              className="skills-link"
+              href={content.link2}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {content.link_desc2}
+            </a>
+          )}
+        </>
+
         <span className="skills-tags">{content.tags}</span>
       </div>
     </section>

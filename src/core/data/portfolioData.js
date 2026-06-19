@@ -85,9 +85,14 @@ const data = {
   project_prtf_tags:
     'HTML · CSS · JavaScript · React.JS · Redux · Vite · Responsive Design',
   project_prtf_link: 'https://portfolioags.arenalsoft.es/',
+  project_prtf_link_gh: 'https://github.com/Alegarse/PORTFOLIO',
   project_prtf_link_desc: {
     es: 'Abrir en nueva pestaña',
     en: 'Open into new tab',
+  },
+  project_prtf_link_desc_gh: {
+    es: 'Abrir repositorio',
+    en: 'Open repository',
   },
   project_filmax_title: {
     es: 'Filmax',
