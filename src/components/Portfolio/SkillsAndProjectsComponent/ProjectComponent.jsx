@@ -27,8 +27,6 @@ const ProjectComponent = (props) => {
     });
   };
 
-  console.log(content);
-
   useEffect(() => {
     setContentSection();
   }, [language, classSection]);

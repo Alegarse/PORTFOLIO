@@ -36,7 +36,7 @@ const SkillsAndProjectsComponent = () => {
           <ProjectComponent classSection="filmax" images={[filmax1, filmax2]} />
           <ProjectComponent
             classSection="prtf"
-            images={[prtf1, prtf2, prtf3]}
+            images={[prtf1]}
           />
         </div>
       )}
