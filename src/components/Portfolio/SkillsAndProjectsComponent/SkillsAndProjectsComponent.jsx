@@ -32,7 +32,7 @@ const SkillsAndProjectsComponent = () => {
         </div>
       ) : (
         <div className="projects-container">
-          <ProjectComponent classSection="apib" images={[api1, api2, api3]} />
+          <ProjectComponent classSection="apib" images={[api1, api2]} />
           <ProjectComponent classSection="filmax" images={[filmax1, filmax2]} />
           <ProjectComponent
             classSection="prtf"

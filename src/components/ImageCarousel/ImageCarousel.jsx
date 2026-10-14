@@ -3,15 +3,17 @@ import { useState } from 'react';
 function ImageCarousel({ images }) {
   const [current, setCurrent] = useState(0);
   const total = images.length;
+  const multiple = total > 1;
 
   const prev = () => setCurrent((current - 1 + total) % total);
   const next = () => setCurrent((current + 1) % total);
 
   return (
-    <div style={{ position: 'relative', overflow: 'hidden', width: '80%'}}>
+    <div style={{ position: 'relative', overflow: 'hidden', width: '80%' }}>
       <div
         style={{
           display: 'flex',
+          width: '100%',
           transition: 'transform 0.35s ease',
           transform: `translateX(-${current * 100}%)`,
         }}
@@ -20,42 +22,52 @@ function ImageCarousel({ images }) {
           <img
             key={i}
             src={src}
-            className='img-carousel'
+            className="img-carousel"
             alt={`skill ${i + 1}`}
-            style={{ minWidth: '100%', position: 'center' }}
-          />
-        ))}
-      </div>
-
-      <button onClick={prev} style={btnStyle('left')}>
-        ‹
-      </button>
-      <button onClick={next} style={btnStyle('right')}>
-        ›
-      </button>
-
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          gap: 6,
-          marginTop: 8,
-        }}
-      >
-        {images.map((_, i) => (
-          <span
-            key={i}
-            onClick={() => setCurrent(i)}
             style={{
-              width: 7,
-              height: 7,
-              borderRadius: '50%',
-              cursor: 'pointer',
-              background: i === current ? '#888' : '#ccc',
+              flex: '0 0 100%',
+              width: '100%',
+              height: 'auto',
+              display: 'block',
+              objectFit: 'contain',
             }}
           />
         ))}
       </div>
+
+      {multiple && (
+        <>
+          <button onClick={prev} style={btnStyle('left')}>
+            ‹
+          </button>
+          <button onClick={next} style={btnStyle('right')}>
+            ›
+          </button>
+
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              gap: 6,
+              marginTop: 8,
+            }}
+          >
+            {images.map((_, i) => (
+              <span
+                key={i}
+                onClick={() => setCurrent(i)}
+                style={{
+                  width: 7,
+                  height: 7,
+                  borderRadius: '50%',
+                  cursor: 'pointer',
+                  background: i === current ? '#888' : '#ccc',
+                }}
+              />
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 }
