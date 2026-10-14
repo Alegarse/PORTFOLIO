@@ -3,6 +3,7 @@ import SkillComponent from './SkillComponent';
 import img_front from '../../../assets/skills_front.png';
 import img_back from '../../../assets/skills_back.png';
 import img_bbdd from '../../../assets/skills_bbdd.png';
+import img_support from '../../../assets/skills_support.png';
 import ProjectComponent from './ProjectComponent';
 
 /** Iamges import */
@@ -27,6 +28,7 @@ const SkillsAndProjectsComponent = () => {
           <SkillComponent classSection="front" photoSrc={img_front} />
           <SkillComponent classSection="back" photoSrc={img_back} />
           <SkillComponent classSection="bbdd" photoSrc={img_bbdd} />
+          <SkillComponent classSection="support" photoSrc={img_support} />
         </div>
       ) : (
         <div className="projects-container">

@@ -26,31 +26,30 @@ Escribe un número (1-6) o una pregunta....`,
     text: 'Escribe 0 para volver al menú.',
   },
   about: {
-    text: `Soy desarrollador full stack y formador técnico en Málaga.
+    text: `Soy desarrollador full stack y formador técnico en Málaga, con unos tres años y medio de experiencia entre desarrollo y soporte técnico.
 Mi día a día gira en torno a JavaScript, React, Node.js, MongoDB y MySQL, tanto construyendo aplicaciones web como enseñando a otros a programar.
-Actualmente profundizo en TypeScript y PostgreSQL, y compagino mi trabajo con un bootcamp de ciberseguridad. También aprendo despliegue en servidores Ubuntu y gestión de dominios para cubrir todo el ciclo de un proyecto.`,
+Actualmente profundizo en TypeScript y PostgreSQL, y aprendo a desplegar proyectos en servidores Linux para cubrir todo el ciclo de un proyecto.`,
   },
   stds: {
-    text: `Bootcamp Full Stack (Codespace Academy),
-Bootcamp de Ciberseguridad (en curso),
+    text: `Programa Profesional en Desarrollo Web + Aplicaciones Móviles (Codespace Academy),
 Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM),
 Formación continua en programación, metodologías ágiles e IA.`,
   },
   exp: {
-    text: `Formador técnico de Desarrollo Full Stack (actualidad),
-Desarrollador Full Stack en CRM del sector automoción (3 años y medio),
+    text: `Formador técnico de desarrollo full stack,
+Desarrollador full stack y soporte técnico de segundo nivel en un CRM en producción del sector automoción,
 Desarrollo Android nativo con APIs REST (freelance).`,
   },
   mind: {
     text: `Me atrae especialmente el lado backend del desarrollo: diseñar APIs claras, integrar servicios y automatizar lo que se puede automatizar.
-Me interesa entender cómo escala una aplicación cuando crece de verdad, y por qué unas decisiones técnicas envejecen bien y otras no.
-La ciberseguridad y el rendimiento son los dos terrenos donde quiero seguir profundizando los próximos años.`,
+El soporte técnico me ha enseñado a mirar el sistema completo: cuando algo falla en producción, me interesa entender la causa y evitar que vuelva a pasar.
+El rendimiento y la fiabilidad de las aplicaciones en producción son los terrenos donde quiero seguir profundizando los próximos años.`,
   },
   hobbys: {
     text: `Senderismo, cine, lectura, viajar, playa, un poco de todo.`,
   },
   contact: {
-    email: 'agscm2@mail.com',
+    email: 'agscm2@gmail.com',
     phone: '+34644321368',
     linkedin: 'https://www.linkedin.com/in/alegarse',
   },
@@ -84,28 +83,24 @@ Type a number (1–6) or ask a question...`,
   },
 
   about: {
-    text: `I'm a full stack developer and tech educator based in Málaga, Spain.
-My day-to-day revolves around JavaScript, React, Node.js, MongoDB and MySQL — both building web applications and teaching others to code.
-I'm currently going deeper into TypeScript and PostgreSQL, and combining my work with a cybersecurity bootcamp. I'm also learning to deploy projects on my own Ubuntu servers and manage domains, so I can cover the full cycle of a project.`,
+    text: `I'm a full stack developer and tech educator based in Málaga, Spain, with about three and a half years of experience across development and technical support.
+My day-to-day revolves around JavaScript, React, Node.js, MongoDB and MySQL, both building web applications and teaching others to code.
+I'm currently going deeper into TypeScript and PostgreSQL, and learning to deploy projects on Linux servers so I can cover the full cycle of a project.`,
   },
-
   stds: {
-    text: `Full Stack Bootcamp (Codespace Academy),
-Cybersecurity Bootcamp (in progress),
+    text: `Professional Program in Web and Mobile Application Development (Codespace Academy),
 Advanced Vocational Diploma in Multi-platform Application Development (DAM),
 Ongoing training in programming, agile methodologies and AI.`,
   },
-
   exp: {
-    text: `Full Stack Development Instructor (current),
-Full Stack Developer on a CRM in the automotive sector (3.5 years),
+    text: `Full Stack Development Instructor,
+Full Stack Developer and second-level technical support on a CRM in production in the automotive sector,
 Native Android development with REST APIs (freelance).`,
   },
-
   mind: {
     text: `I'm especially drawn to the backend side of development: designing clean APIs, integrating services and automating whatever can be automated.
-I want to understand how an application really scales when it grows, and why some technical decisions age well while others don't.
-Cybersecurity and performance are the two areas where I want to keep going deeper over the next few years.`,
+Technical support has taught me to look at the whole system: when something fails in production, I want to understand the root cause and make sure it doesn't happen again.
+Performance and reliability of applications in production are the areas where I want to keep going deeper over the next few years.`,
   },
 
   hobbys: {
@@ -113,7 +108,7 @@ Cybersecurity and performance are the two areas where I want to keep going deepe
   },
 
   contact: {
-    email: 'agscm2@mail.com',
+    email: 'agscm2@gmail.com',
     phone: '+34644321368',
     linkedin: 'https://www.linkedin.com/in/alegarse',
   },

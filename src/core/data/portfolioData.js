@@ -5,8 +5,8 @@ const data = {
     en: 'A little about me',
   },
   info_desc: {
-    es: 'Soy desarrollador full stack y actualmente trabajo como formador técnico especializado en desarrollo. Antes de esto, trabajé tres años y medio como desarrollador Full Stack manteniendo un CRM en el sector automoción.\nMe apasiona el desarrollo de aplicaciones, la creación de proyectos de principio a fin y el trabajo en equipo bajo metodologías ágiles.\nEn mi día a día combino enseñar a programar desde cero con seguir aprendiendo yo: actualmente profundizo en TypeScript, PostgreSQL y ciberseguridad, esta última a través de un bootcamp en el que acabo de empezar.\nMe interesa especialmente entender cómo se diseñan aplicaciones robustas, mantenibles y seguras.',
-    en: "I'm a full stack developer currently working as a technical instructor specialized in software development. Before this, I spent three and a half years as a Full Stack Developer maintaining a CRM in the automotive sector.\nI'm passionate about building applications end-to-end, project creation and teamwork under agile methodologies.\nMy day-to-day combines teaching others to code from scratch with continuing to learn myself: I'm currently going deeper into TypeScript, PostgreSQL and cybersecurity — the latter through a bootcamp I'm just starting.\nI'm especially interested in understanding how to design robust, maintainable and secure applications.",
+    es: 'Soy desarrollador full stack con unos tres años y medio de experiencia entre desarrollo y soporte técnico. Durante ese tiempo he mantenido y ampliado un CRM en producción para el sector automoción, trabajando en frontend y backend, y he dado soporte técnico de segundo nivel: analizaba y resolvía incidencias reales en un sistema en uso.\nEsa combinación es la que más valoro: entender el código lo suficiente para construir funcionalidades y entender el sistema lo suficiente para diagnosticar cuando algo falla. Me gusta reproducir los problemas de forma metódica, encontrar la causa y documentar la solución.\nTambién he dedicado tiempo a la formación técnica, enseñando a programar y revisando código de alumnos, lo que me ha obligado a explicar con claridad y a depurar con paciencia.\nActualmente profundizo en TypeScript y PostgreSQL. Me interesa especialmente diseñar aplicaciones robustas, mantenibles y seguras.',
+    en: "I'm a full stack developer with about three and a half years of experience across development and technical support. Over that time I have maintained and extended a CRM in production for the automotive sector, working on both frontend and backend, and I have provided second-level technical support: analyzing and resolving real incidents in a system in use.\nThat combination is what I value most: understanding the code well enough to build features, and understanding the system well enough to diagnose when something fails. I like to reproduce problems methodically, find the root cause and document the fix.\nI've also spent time in technical training, teaching people to code and reviewing students' code, which pushed me to explain clearly and debug with patience.\nI'm currently going deeper into TypeScript and PostgreSQL. I'm especially interested in designing applications that are robust, maintainable and secure.",
   },
   more_info: {
     es: 'Más información técnica',
@@ -54,6 +54,16 @@ const data = {
   },
   skills_bbdd_tags:
     'MongoDB · MySQL - PostgreSQL · Cloudinary · Git · GitHub · CI/CD · Linux Server',
+  skills_support_title: {
+    es: 'Soporte Técnico',
+    en: 'Technical Support',
+  },
+  skills_support_desc: {
+    es: 'Doy soporte técnico de segundo nivel sobre sistemas en producción: recibo las incidencias, reproduzco el problema de forma metódica, localizo la causa y propongo o aplico la solución.\nDocumento cada incidencia y su resolución para que el conocimiento quede disponible para el equipo y no dependa de una sola persona.\nTrabajo de forma coordinada con el equipo de desarrollo, trasladando los casos que requieren cambios de código y priorizándolos según su impacto para el usuario.',
+    en: 'I provide second-level technical support on systems in production: I receive incidents, reproduce the problem methodically, locate the root cause and propose or apply the fix.\nI document each incident and its resolution so the knowledge stays available to the team and does not depend on a single person.\nI work in coordination with the development team, escalating cases that require code changes and prioritizing them by their impact on the user.',
+  },
+  skills_support_tags:
+    'Soporte de segundo nivel · Resolución de incidencias · Análisis de causa raíz · Documentación técnica · Jira · Postman · Git · GitLab · Scrum',  
   nav_contact: {
     es: 'Contacto',
     en: 'Contact',
@@ -67,9 +77,9 @@ const data = {
     en: 'Shall we talk?',
   },
   contact_description: {
-  es: 'Hablemos de proyectos, retos técnicos o cualquier cosa interesante que tenga que ver con código y construir cosas.',
-  en: "Let's talk about projects, technical challenges, or anything interesting that involves code and building things.",
-},
+    es: 'Hablemos de proyectos, retos técnicos o cualquier cosa interesante que tenga que ver con código y construir cosas.',
+    en: "Let's talk about projects, technical challenges, or anything interesting that involves code and building things.",
+  },
   contact_location: {
     es: 'Ubicación: Benalmádena, Málaga, Spain',
     en: 'Location: Benalmádena, Málaga, Spain',
